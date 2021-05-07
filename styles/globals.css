@@ -1,16 +1,49 @@
-html,
+:root {
+  --colorAzul: #07354A;
+  --colorAmarillo: #FFC60B;
+  --colorChicle: #E6553C;
+  --colorRosa: #F6B9B4;
+  --colorGrisOscuro: #231F20;
+  --colorGrisClaro: #707070;
+  --colorBeige: #F4F1E8;
+}
+
+html {
+  box-sizing: 	border-box;
+  font-size: 62.5%;
+  background-color: var(--colorBeige);
+}
+
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: var(--colorBeige)!important;
+  font-size: 1.6rem!important;
+  text-align: center;
 }
 
-a {
-  color: inherit;
+*, *:before, *:after{
+  box-sizing: inherit;
+}
+
+a, a:hover {
   text-decoration: none;
+  color: white;
 }
 
-* {
-  box-sizing: border-box;
+img {
+  max-width: 100%;
 }
+
+.p-secc {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.animate__delay-6s { --animate-delay: 6s!important; animation-delay: 6s }
+
+.animate__delay-7s { --animate-delay: 7s!important; animation-delay: 7s }
+
+.animate__delay-8s { --animate-delay: 8s!important; animation-delay: 8s }
+
+.animate__delay-9s { --animate-delay: 9s!important; animation-delay: 9s }
+
+.animate__delay-10s { --animate-delay: 10s!important; animation-delay: 10s }

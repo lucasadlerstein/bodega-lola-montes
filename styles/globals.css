@@ -18,6 +18,7 @@ body {
   background-color: var(--colorBeige)!important;
   font-size: 1.6rem!important;
   text-align: center;
+  font-family: 'Gotham', sans-serif;
 }
 
 *, *:before, *:after{
@@ -33,20 +34,56 @@ img {
   max-width: 100%;
 }
 
+@font-face {
+  font-family: "Gotham";
+  src: url("/fonts/Gotham/GothamMedium.ttf");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("/fonts/Gotham/Gotham-Ultra.ttf");
+  font-style: thin;
+  font-weight: 200;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GothamBook";
+  src: url("/fonts/Gotham/GothamBook.ttf");
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("/fonts/Gotham/Gotham-Bold.otf");
+  font-style: bold;
+  font-weight: 400;
+  font-display: swap;
+}
+
+
 .p-secc {
   padding-top: 6rem;
   padding-bottom: 6rem;
 }
 
 .animate__delay-6s { --animate-delay: 6s!important; animation-delay: 6s }
-
 .animate__delay-7s { --animate-delay: 7s!important; animation-delay: 7s }
-
 .animate__delay-8s { --animate-delay: 8s!important; animation-delay: 8s }
-
 .animate__delay-9s { --animate-delay: 9s!important; animation-delay: 9s }
-
 .animate__delay-10s { --animate-delay: 10s!important; animation-delay: 10s }
+.animate__delay-11s { --animate-delay: 11s!important; animation-delay: 11s }
+.animate__delay-12s { --animate-delay: 12s!important; animation-delay: 12s }
+.animate__delay-13s { --animate-delay: 13s!important; animation-delay: 13s }
+.animate__delay-14s { --animate-delay: 14s!important; animation-delay: 14s }
+.animate__delay-15s { --animate-delay: 15s!important; animation-delay: 15s }
+.animate__delay-16s { --animate-delay: 16s!important; animation-delay: 16s }
+.animate__delay-17s { --animate-delay: 17s!important; animation-delay: 17s }
 
 .spinner {
   width: 40px;

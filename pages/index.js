@@ -8,7 +8,7 @@ import Banner from '../components/vinos/Banner';
 const Titulo = styled.h1`
   font-size: 5rem;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 300;
   margin-bottom: 1rem;
 `;
 
@@ -23,6 +23,8 @@ const QuieroConocer = styled.a`
   text-transform: uppercase;
   margin-top: 3rem;
   transition: all .3s ease;
+  font-weight: bold;
+  
   &:hover { 
     cursor: pointer;
     padding: .8rem 3rem;
@@ -60,10 +62,26 @@ const BtnIdioma = styled.button`
 const IconosAnimados = styled.div`
   display: flex;
   justify-content: space-around;
+  position: relative;
   img {
-    max-height: 15rem; 
+    position: absolute;
+    bottom: 0;
+    right: 0;
   }
 `;
+
+const IconoIzquierda = styled.img`
+  top: -6rem;
+  left: 10rem;
+  width: 20rem;
+`;
+
+const IconoDerecha = styled.img`
+  top: -6rem;
+  left: 83rem;
+  width: 20rem;
+`;
+
 
 const Index = () => {
 
@@ -87,11 +105,12 @@ const Index = () => {
             </Col>
         </Row>
         <Titulo className="animate__animated animate__fadeIn">Bienvenido al mundo<br/>Lola Montes</Titulo>
-        <p className="animate__animated animate__fadeIn animate__delay-1s">Elaboramos vinos con uvas seleccionadas de nuestros viñedos de Agrelo, Mendoza.</p>
+        <p style={{fontFamily: 'GothamBook'}} className="animate__animated animate__fadeIn animate__delay-1s">Elaboramos vinos con uvas seleccionadas de nuestros viñedos de Agrelo, Mendoza.</p>
         <Cual className="animate__animated animate__fadeIn animate__delay-2s">¿Cuál vas a elegir hoy?</Cual>
+
         <IconosAnimados className="animate__animated animate__fadeIn animate__delay-6s">
-          <img className="animate__animated animate__fadeIn animate__delay-6s" src="/images/animaciones/Animación-HOME.gif" alt="Bodega Lola Montes" />
-          <img className="animate__animated animate__fadeIn animate__delay-6s" src="/images/animaciones/Animación-HOME-CINTA.gif" alt="Be Kind, Drink Wine" />
+          <IconoIzquierda className="animate__animated animate__fadeIn animate__delay-6s" src="/images/animaciones/Animación-HOME.gif" alt="Bodega Lola Montes" />
+          <IconoDerecha className="animate__animated animate__fadeIn animate__delay-6s" src="/images/animaciones/Animación-HOME-CINTA.gif" alt="Be Kind, Drink Wine" />
         </IconosAnimados>
 
         <Banner />

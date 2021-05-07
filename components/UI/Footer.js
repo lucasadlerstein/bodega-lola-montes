@@ -1,10 +1,12 @@
 import React from 'react';
 import {Row, Col, Container, FormGroup} from 'reactstrap';
 import styled from '@emotion/styled';
+import Link from 'next/link';
 
 const Lista = styled.ul`
     padding: 0;
     list-style: none;
+    font-family: 'GothamBook';
     li {
         color: white;
     }
@@ -20,15 +22,19 @@ const Footer = () => {
             <Container>
                 <Row>
                     <Col xs={4} sm={4} md={2} lg={2}>
-                        <img src="/images/logo-lolamontes-footer.svg" alt="Bodega Lola Montes" style={{width: '100%'}} />
+                        <Link href="/">
+                            <a>
+                                <img src="/images/logo-lolamontes-footer.svg" alt="Bodega Lola Montes" style={{width: '100%'}} />
+                            </a>
+                        </Link>
                     </Col>
                     <Col xs={4} sm={4} md={2} lg={2}>
                         <Lista>
-                            <li><a href="#" target="_blank">TIENDA</a></li>
-                            <li><a href="#" target="_blank">Gift Shop</a></li>
-                            <li><a href="#" target="_blank">Cómo comprar</a></li>
-                            <li><a href="#" target="_blank">Términos y condiciones</a></li>
-                            <li><a href="#" target="_blank">Contacto</a></li>
+                            <li><a href="https://tienda.bodegalolamontes.com/" target="_blank">TIENDA</a></li>
+                            <li><a href="https://tienda.bodegalolamontes.com/lola-montes/" target="_blank">Gift Shop</a></li>
+                            <li><a href="https://tienda.bodegalolamontes.com/como-comprar/" target="_blank">Cómo comprar</a></li>
+                            <li><a href="https://tienda.bodegalolamontes.com/aceptacion-de-los-terminos-y-condiciones/" target="_blank">Términos y condiciones</a></li>
+                            <li><a href="https://tienda.bodegalolamontes.com/contacto/" target="_blank">Contacto</a></li>
                         </Lista>
                     </Col>
                     <Col xs={4} sm={4} md={2} lg={2}>
@@ -43,7 +49,7 @@ const Footer = () => {
                     </Col>
                     <Col xs={6} sm={6} md={3} lg={3}>
                         <Lista>
-                            <li><a href="#" target="_blank">CONTACTO</a></li>
+                            <li><a href="https://tienda.bodegalolamontes.com/contacto/" target="_blank">CONTACTO</a></li>
                             <li><a href="mailto:tienda@bodegalolamontes.com">tienda@bodegalolamontes.com</a></li>
                             <li><a href="#" target="_blank">FB - IG</a></li>
                         </Lista>
@@ -59,7 +65,7 @@ const Footer = () => {
                         </Lista>
                     </Col>
                 </Row>
-                <p className="text-white mt-5 text-center">BEBER CON MODERACIÓN. PROHIBIDA LA VENTA A MENORES DE 18 AÑOS.</p>
+                <p style={{fontFamily: 'GothamBook'}} className="text-white mt-5 text-center">BEBER CON MODERACIÓN. PROHIBIDA LA VENTA A MENORES DE 18 AÑOS.</p>
             </Container>
 
         </footer>

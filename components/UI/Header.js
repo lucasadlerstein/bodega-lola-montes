@@ -5,10 +5,11 @@ import Link from 'next/link';
 
 const Idiomas = styled.div`
     display: flex;
-    padding: .2rem;
+    /* padding: .2rem; */
     justify-content: flex-end;
-    align-items: center;
+    align-items: flex-end;
     width: 10rem;
+
 `;
 const BtnIdioma = styled.button`
     text-transform: uppercase;
@@ -32,8 +33,10 @@ const BtnIdioma = styled.button`
 
 const Navegacion = styled.ul`
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
     padding: 0;
+    margin: .5rem 0 0 0;
     li {
         text-transform: uppercase;
         padding: 0 2rem;
@@ -41,6 +44,7 @@ const Navegacion = styled.ul`
             border-bottom: transparent solid white;
             padding-bottom: .5rem; 
             transition: all .5s ease;
+            padding: 0;
     
             &:hover {
                 border-bottom: 1px solid white;
@@ -52,7 +56,7 @@ const Navegacion = styled.ul`
 
 const Header = () => {
     return (
-        <header style={{backgroundColor: 'var(--colorGrisOscuro)'}} >
+        <header style={{backgroundColor: 'var(--colorGrisOscuro)', fontFamily: 'GothamBook'}} >
             <Container>
                 <Row>
                     <Col className="text-left">
@@ -62,10 +66,11 @@ const Header = () => {
                             </a>
                         </Link>
                     </Col>
-                    <Col className="text-right mt-5 mb-5">
+                    <Col className="text-right mt-5 mb-5" style={{justifyItems: 'flex-end'}}>
                         <Navegacion>
                             <li><Link href="/"><a>Home</a></Link></li>
                             <li><Link href="/vinos"><a>Vinos</a></Link></li>
+                            <li><a href="#">Presskit</a></li>
                             <li><a href="https://tienda.bodegalolamontes.com/contacto" target="_blank">Contacto</a></li>
                             <li><a href="https://tienda.bodegalolamontes.com" target="_blank">Tienda</a></li>
                             <li>

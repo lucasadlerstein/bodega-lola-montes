@@ -25,6 +25,7 @@ const CuadradoVino = ({titulo, imagen, varietal, slug, color}) => {
         text-transform: uppercase;
         font-weight: bold;
         margin: .5rem 0;
+        font-weight: bold;
     `;
 
     const Varietal = styled.p`

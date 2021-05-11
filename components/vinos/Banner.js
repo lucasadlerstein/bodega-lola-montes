@@ -10,12 +10,6 @@ const RowPer = styled(Row)`
     justify-content: center!important;
 `;
 
-const ImagenVino = styled.img`
-    max-width: 22rem;
-    /* max-width: 30%; */
-    height: auto;
-`;
-
 const Banner = () => {
 
     const Vinos = VinosLista.vinos;
@@ -28,13 +22,13 @@ const Banner = () => {
                 className="mb-5" style={{justifyContent: 'center'}}
             >
                 <Col xs={4} sm={4} lg={3} className="p-0">
-                    <ImagenVino className="animate__animated animate__faster animate__fadeInLeft animate__delay-3s" src={`/images/vinos/${Vinos[cont].imagen}`} alt={`${Vinos[cont].uno} ${Vinos[cont].dos} - ${Vinos[cont].varietal}`} />
+                    <img className="animate__animated animate__faster animate__fadeInLeft animate__delay-3s" src={`/images/vinos/${Vinos[cont].imagen}`} alt={`${Vinos[cont].uno} ${Vinos[cont].dos} - ${Vinos[cont].varietal}`} />
                 </Col>
                 <Col xs={4} sm={4} lg={3} className="p-0">
-                    <ImagenVino className="animate__animated animate__faster animate__fadeInLeft animate__delay-4s" src={`/images/vinos/${Vinos[cont+1].imagen}`} alt={`${Vinos[cont].uno} ${Vinos[cont].dos} - ${Vinos[cont].varietal}`} />
+                    <img className="animate__animated animate__faster animate__fadeInLeft animate__delay-4s" src={`/images/vinos/${Vinos[cont+1].imagen}`} alt={`${Vinos[cont].uno} ${Vinos[cont].dos} - ${Vinos[cont].varietal}`} />
                 </Col>
                 <Col xs={4} sm={4} lg={3} className="p-0">
-                    <ImagenVino className="animate__animated animate__faster animate__fadeInLeft animate__delay-5s" src={`/images/vinos/${Vinos[cont+2].imagen}`} alt={`${Vinos[cont].uno} ${Vinos[cont].dos} - ${Vinos[cont].varietal}`} />
+                    <img className="animate__animated animate__faster animate__fadeInLeft animate__delay-5s" src={`/images/vinos/${Vinos[cont+2].imagen}`} alt={`${Vinos[cont].uno} ${Vinos[cont].dos} - ${Vinos[cont].varietal}`} />
                 </Col>
             </Row>
             {/* <div className="mb-5" style={{display: 'flex', justifyContent: 'center'}} >

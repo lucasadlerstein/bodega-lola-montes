@@ -61,7 +61,7 @@ const unVino = ({enlace}) => {
 
         const Titulo = styled.h1`
             font-weight: bold;
-            font-size: 4.5rem;
+            font-size: 5rem;
             border-bottom: 4px solid ${vinoInfo.uno === 'Circus' ? 'var(--colorChicle);' : 'black' };
             text-transform: uppercase;
             width: fit-content;

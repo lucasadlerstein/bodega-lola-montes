@@ -79,7 +79,7 @@ const IconosAnimados = styled.div`
 
 const IconoIzquierda = styled.img`
   top: -4rem;
-  left: 18rem;
+  left: 12rem;
   width: 12rem;
 `;
 

@@ -20,15 +20,15 @@ const Footer = () => {
             className="p-secc text-left"
         >
             <Container>
-                <Row>
-                    <Col xs={4} sm={4} md={2} lg={2}>
+                <Row className="mobile-text-center">
+                    <Col className="mx-auto mb-5" xs={7} sm={7} md={2} lg={2}>
                         <Link href="/">
                             <a>
                                 <img src="/images/logo-lolamontes-footer.svg" alt="Bodega Lola Montes" style={{width: '100%'}} />
                             </a>
                         </Link>
                     </Col>
-                    <Col xs={4} sm={4} md={2} lg={2}>
+                    <Col xs={6} sm={6} md={2} lg={2}>
                         <Lista>
                             <li><a href="https://tienda.bodegalolamontes.com/" target="_blank">TIENDA</a></li>
                             <li><a href="https://tienda.bodegalolamontes.com/lola-montes/" target="_blank">Gift Shop</a></li>
@@ -37,7 +37,7 @@ const Footer = () => {
                             <li><a href="https://tienda.bodegalolamontes.com/contacto/" target="_blank">Contacto</a></li>
                         </Lista>
                     </Col>
-                    <Col xs={4} sm={4} md={2} lg={2}>
+                    <Col xs={6} sm={6} md={2} lg={2}>
                         <Lista>
                             <li><a href="#" target="_blank">LA BODEGA</a></li>
                             <li><a href="#" target="_blank">Lola Montes</a></li>
@@ -47,16 +47,16 @@ const Footer = () => {
                             <li><a href="#" target="_blank">Recursos</a></li>
                         </Lista>
                     </Col>
-                    <Col xs={6} sm={6} md={3} lg={3}>
+                    <Col xs={12} sm={12} md={3} lg={3}>
                         <Lista>
                             <li><a href="https://tienda.bodegalolamontes.com/contacto/" target="_blank">CONTACTO</a></li>
                             <li><a href="mailto:tienda@bodegalolamontes.com">tienda@bodegalolamontes.com</a></li>
                             <li><a href="#" target="_blank">FB - IG</a></li>
                         </Lista>
                     </Col>
-                    <Col xs={6} sm={6} md={3} lg={3}>
+                    <Col xs={12} sm={12} md={3} lg={3}>
                         <Lista
-                            className="text-right"
+                            className="text-right mobile-text-center"
                         >
                             <li className="mb-2">Medios de pago</li>
                             <li>

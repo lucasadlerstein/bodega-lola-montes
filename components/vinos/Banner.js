@@ -13,6 +13,7 @@ const RowPer = styled(Row)`
 const ImagenVino = styled.img`
     width: 22rem;
     max-width: 30%;
+    height: auto;
 `;
 
 const Banner = () => {

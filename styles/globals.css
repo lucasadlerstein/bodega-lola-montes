@@ -101,6 +101,9 @@ img {
   .no-mobile {
     display: none!important;
   }
+  .mobile-text-center {
+    text-align: center!important;
+  }
 }
 
 @media (min-width: 540px){

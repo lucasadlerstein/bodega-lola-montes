@@ -19,6 +19,7 @@ const Layout = ({children}) => {
                 {/* <meta property="og:image" content="\img\Latam_Hospitals_2020_Share.jpg" /> */}
                 {/* <meta property="og:url" content="https://latamhospitals.com" /> */}
                 {/* <meta property="og:site_name" content="LATAM HOSPITALS 2020" /> */}
+
                 <link
                     rel="preload"
                     href="/fonts/Gotham/GothamMedium.ttf"

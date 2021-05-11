@@ -11,7 +11,8 @@ const RowPer = styled(Row)`
 `;
 
 const ImagenVino = styled.img`
-    max-width: 22rem;
+    width: 22rem;
+    max-width: 30%;
 `;
 
 const Banner = () => {

@@ -21,13 +21,17 @@ const QuieroConocer = styled.a`
   color: white;
   padding: .8rem 2.5rem;
   text-transform: uppercase;
-  margin-top: 3rem;
   transition: all .3s ease;
   font-weight: bold;
+  display: block;
+  margin: 3rem auto;
+  @media (min-width: 768px){
+    max-width: 25rem;
+  }
   
   &:hover { 
     cursor: pointer;
-    padding: .8rem 3rem;
+    color: var(--colorRosa);
   }
 `;
 
@@ -63,6 +67,9 @@ const IconosAnimados = styled.div`
   display: flex;
   justify-content: space-around;
   position: relative;
+  @media (max-width: 768px){
+    display: none;
+  }
   img {
     position: absolute;
     bottom: 0;
@@ -71,15 +78,15 @@ const IconosAnimados = styled.div`
 `;
 
 const IconoIzquierda = styled.img`
-  top: -6rem;
-  left: 10rem;
-  width: 20rem;
+  top: -4rem;
+  left: 18rem;
+  width: 12rem;
 `;
 
 const IconoDerecha = styled.img`
-  top: -6rem;
-  left: 83rem;
-  width: 20rem;
+  top: -4rem;
+  left: 80rem;
+  width: 12rem;
 `;
 
 
@@ -116,7 +123,7 @@ const Index = () => {
         <Banner />
         
         <Link href="/vinos">
-          <QuieroConocer className="animate__animated animate__faster animate__fadeInLeft animate__delay-7s">Quiero conocer todos los vinos</QuieroConocer>
+          <QuieroConocer className="text-center animate__animated animate__faster animate__fadeInLeft animate__delay-7s">Quiero conocer<br/>todos los vinos</QuieroConocer>
         </Link>
 
       </Container>

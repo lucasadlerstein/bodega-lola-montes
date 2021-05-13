@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
 import styled from '@emotion/styled';
 import Link from 'next/link';
-import { Collapse, Row, Container, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
-
+import { Container, Row, Col, Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem, NavbarText } from 'reactstrap';
+  
 const Idiomas = styled.div`
     display: flex;
     padding: .5rem;
@@ -38,41 +38,49 @@ const BtnIdioma = styled.button`
 
 const Header = () => {
 
-    const [collapsed, setCollapsed] = useState(true);
+    const [isOpen, setIsOpen] = useState(false);
 
-    const toggleNavbar = () => setCollapsed(!collapsed);
-  
+    const toggle = () => setIsOpen(!isOpen);
+    
     return (
         <header style={{backgroundColor: 'var(--colorGrisOscuro)', fontFamily: 'GothamBook'}} >
             <Container>
-                <nav className="navbar sticky-top navbar-expand-lg navbar-dark">
-                    <Link href="/">
-                        <a className="navbar-brand">
-                            <img style={{maxHeight: '10rem'}} src="/images/logo_blanco-min.png" alt="Logo Lola Montes"/>
-                        </a>
-                    </Link>
+                <Navbar color="" dark expand="md">
+                    <NavbarBrand href="/">
+                        <img style={{maxHeight: '10rem'}} src="/images/logo_blanco-min.png" alt="Logo Lola Montes"/>
+                    </NavbarBrand>
                     <Idiomas className="no-desktop">
                         <BtnIdioma style={{color: 'var(--colorChicle)'}} >ESP</BtnIdioma>
                         <BtnIdioma>ENG</BtnIdioma>
                     </Idiomas>
-                    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navegacionMenu" aria-controls="navegacionMenu" aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
-                    </button>
-                    <div className="collapse navbar-collapse justify-content-end" id="navegacionMenu">
-                        <div className="navbar-nav">
-                            <Link href="/"><a className="nav-item nav-link">Home</a></Link>
-                            <Link href="/vinos"><a className="nav-item nav-link">Vinos</a></Link>
-                            <a className="nav-item nav-link" href="#">Presskit</a>
-                            <a className="nav-item nav-link" href="https://tienda.bodegalolamontes.com/contacto" target="_blank">Contacto</a>
-                            <a className="nav-item nav-link" href="https://tienda.bodegalolamontes.com" target="_blank">Tienda</a>
-                            
-                        </div>
-                    </div>
-                    <Idiomas className="no-mobile">
-                        <BtnIdioma style={{color: 'var(--colorChicle)'}} >ESP</BtnIdioma>
-                        <BtnIdioma>ENG</BtnIdioma>
-                    </Idiomas>
-                </nav>
+                    <NavbarToggler onClick={toggle} />
+                    <Collapse isOpen={isOpen} navbar>
+                        <Nav className="ml-auto" navbar>
+                            <NavItem>
+                                <NavLink className="text-white" href="/">Home</NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink className="text-white" href="/vinos">Vinos</NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink className="text-white" target="_blank" href="/vinos">Presskit</NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink className="text-white" target="_blank" href="https://tienda.bodegalolamontes.com/contacto">Contacto</NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink className="text-white" target="_blank" href="https://tienda.bodegalolamontes.com">Tienda</NavLink>
+                            </NavItem>
+                        </Nav>
+                        <NavbarText className="no-mobile">
+                            <Idiomas>
+                                <BtnIdioma style={{color: 'var(--colorChicle)'}} >ESP</BtnIdioma>
+                                <BtnIdioma>ENG</BtnIdioma>
+                            </Idiomas>
+                        </NavbarText>
+                    </Collapse>
+                </Navbar>
+
             </Container>
         </header>
     );

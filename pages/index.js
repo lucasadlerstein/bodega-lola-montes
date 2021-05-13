@@ -1,15 +1,19 @@
-import React from 'react';
-import { Container, Row, Col } from 'reactstrap';
+import React, {useState} from 'react';
 import styled from '@emotion/styled';
 import Footer from '../components/UI/Footer';
 import Link from 'next/link';
 import Banner from '../components/vinos/Banner';
+import { Container, Row, Col, Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem, NavbarText } from 'reactstrap';
 
 const Titulo = styled.h1`
-  font-size: 5rem;
+  font-size: 4.5rem;
   text-transform: uppercase;
   font-weight: 300;
   margin-bottom: 1rem;
+  @media (max-width: 540px){
+    font-size: 2.5rem;
+    margin-top: 2rem;
+  }
 `;
 
 const Cual = styled.p`
@@ -36,7 +40,7 @@ const QuieroConocer = styled.a`
 `;
 
 const Idiomas = styled.div`
-    border: 2px solid black;
+    /* border: 2px solid black; */
     padding: .2rem;
     display: flex;
     justify-content: center;
@@ -79,18 +83,22 @@ const IconosAnimados = styled.div`
 
 const IconoIzquierda = styled.img`
   top: -4rem;
-  left: 12rem;
+  left: 8rem;
   width: 12rem;
 `;
 
 const IconoDerecha = styled.img`
   top: -4rem;
-  left: 80rem;
+  left: 88rem;
   width: 12rem;
 `;
 
 
 const Index = () => {
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggle = () => setIsOpen(!isOpen);
 
   return (
     <>
@@ -99,7 +107,22 @@ const Index = () => {
             style={{alignItems: 'center'}}
         >
             <Col className="text-right">
-                <img style={{maxHeight: '3rem'}} src="images/menu-button.png" alt="Boton de Menú"/>
+              <Navbar light style={{color: 'black', justifyContent: 'flex-end'}} >
+                    <NavbarToggler onClick={toggle} />
+                    <Collapse isOpen={isOpen} navbar>
+                        <Nav className={`ml-auto ${isOpen ? 'borde-menu' : ''}`} navbar>
+                            <NavItem>
+                                <NavLink style={{color: 'black'}} className="nav-link-inicio" href="/vinos">Vinos</NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink style={{color: 'black'}} className="nav-link-inicio" target="_blank" href="https://tienda.bodegalolamontes.com/contacto">Contacto</NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink style={{color: 'black'}} className="nav-link-inicio" target="_blank" href="https://tienda.bodegalolamontes.com">Tienda</NavLink>
+                            </NavItem>
+                        </Nav>
+                    </Collapse>
+                </Navbar>
             </Col>
             <Col className="text-center">
                 <img style={{maxHeight: '15rem'}} src="images/logo_negro-min.png" alt="Logo - Bodega Lola Montes"/>
@@ -113,7 +136,7 @@ const Index = () => {
         </Row>
         <Titulo className="animate__animated animate__fadeIn">Bienvenido al mundo<br/>Lola Montes</Titulo>
         <p style={{fontFamily: 'GothamBook'}} className="animate__animated animate__fadeIn animate__delay-1s">Elaboramos vinos con uvas seleccionadas de nuestros viñedos de Agrelo, Mendoza.</p>
-        <Cual className="animate__animated animate__fadeIn animate__delay-2s">¿Cuál vas a elegir hoy?</Cual>
+        <Cual className="animate__animated animate__fadeIn animate__delay-2s mb-0">¿Cuál vas a elegir hoy?</Cual>
 
         <IconosAnimados className="animate__animated animate__fadeIn animate__delay-6s">
           <IconoIzquierda className="animate__animated animate__fadeIn animate__delay-6s" src="/images/animaciones/Animación-HOME.gif" alt="Bodega Lola Montes" />

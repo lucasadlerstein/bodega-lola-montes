@@ -61,7 +61,7 @@ const unVino = ({enlace}) => {
 
         const Titulo = styled.h1`
             font-weight: bold;
-            font-size: 5rem;
+            font-size: 4rem;
             border-bottom: 4px solid ${vinoInfo.uno === 'Circus' ? 'var(--colorChicle);' : 'black' };
             text-transform: uppercase;
             width: fit-content;
@@ -151,9 +151,9 @@ const unVino = ({enlace}) => {
                     <Container>
                         <Row>
                             <Col md={8} lg={7}>
-                                <Titulo className="animate__animated animate__fadeInLeft">{vinoInfo.varietal}</Titulo>
+                                <Titulo className="animate__animated animate__fadeInLeft">{vinoInfo.uno} {vinoInfo.dos} {vinoInfo.varietal}</Titulo>
                                 <Texto className="animate__animated animate__fadeInLeft animate__delay-2s">
-                                    <p className="pregunta">{vinoInfo.uno === 'Circus' ? 'Reseña' : '¿Qué es?'}</p>
+                                    {/* <p className="pregunta">{vinoInfo.uno === 'Circus' ? 'Reseña' : '¿Qué es?'}</p> */}
                                     <p>
                                         {vinoInfo.uno === 'Circus' ? vinoInfo.resena_es : vinoInfo.como_es}
                                     </p>
@@ -202,9 +202,9 @@ const unVino = ({enlace}) => {
                                 }
                             </Col>
                             <Col md={4} lg={5} className="text-center position-relative">
-                                <Estampilla className="animate__animated animate__fadeIn animate__delay-4s"
+                                {/* <Estampilla className="animate__animated animate__fadeIn animate__delay-4s"
                                 src={`/images/animaciones/${vinoInfo.uno === 'Circus' ? 'Animación-CIRCUS-quick-time' : vinoInfo.uno === 'Lola Montes' ? 'Animación-LM' : 'Animación-ROCKY'}.gif`}
-                                alt={`${vinoInfo.uno} ${vinoInfo.dos}`} />
+                                alt={`${vinoInfo.uno} ${vinoInfo.dos}`} /> */}
                                 <ImagenVino className="animate__animated animate__fadeInRight animate__delay-1s" src={`/images/vinos/${vinoInfo.imagen}`} alt={`${vinoInfo.uno} ${vinoInfo.dos} - ${vinoInfo.varietal}`} />
                             </Col>
                         </Row>

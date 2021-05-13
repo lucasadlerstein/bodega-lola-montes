@@ -2,15 +2,16 @@ import React from 'react';
 import styled from '@emotion/styled';
 import Link from 'next/link';
 
-const CuadradoVino = ({titulo, imagen, varietal, slug, color}) => {
+const CuadradoVino = ({titulo, imagen, varietal, slug, bodega}) => {
 
 
     const Cuadrado = styled.div`
-        background-color: ${color};
+        background-color: var(--colorBeige);
         width: 100%;
         padding: 2rem 0;
         text-align: center;
         margin: 1.5rem 0; 
+        transition: all .3s ease;
         img {
             height: 30rem;
             transition: all .5s ease;
@@ -19,18 +20,20 @@ const CuadradoVino = ({titulo, imagen, varietal, slug, color}) => {
                 padding-left: 2rem;
             }
         }
+        &:hover {
+            background-color: ${bodega === 'Circus' ? 'var(--colorAzul)' : (bodega === 'Lola Montes') ? 'var(--colorAmarillo);' : 'var(--colorChicle);'};
+            color: ${bodega === 'Circus' ? 'white' : 'black'};
+        }
     `;
 
     const Bodega = styled.p`
         text-transform: uppercase;
         font-weight: bold;
         margin: .5rem 0;
-        font-weight: bold;
     `;
 
     const Varietal = styled.p`
-        color: var(--colorChicle);
-        font-weight: bold;
+
     `;
 
     const VerMas = styled.a`

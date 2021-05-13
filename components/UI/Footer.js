@@ -16,8 +16,8 @@ const Lista = styled.ul`
 const Footer = () => {
     return (
         <footer
-            style={{backgroundColor: 'var(--colorGrisOscuro)'}}
-            className="p-secc text-left"
+            style={{backgroundColor: 'var(--colorGrisOscuro)', fontSize: '1.4rem'}}
+            className="py-5 text-left"
         >
             <Container>
                 <Row className="mobile-text-center">
@@ -65,7 +65,7 @@ const Footer = () => {
                         </Lista>
                     </Col>
                 </Row>
-                <p style={{fontFamily: 'GothamBook'}} className="text-white mt-5 text-center">BEBER CON MODERACIÓN. PROHIBIDA LA VENTA A MENORES DE 18 AÑOS.</p>
+                <p style={{fontFamily: 'GothamBook'}} className="text-white mt-3 text-center">BEBER CON MODERACIÓN. PROHIBIDA LA VENTA A MENORES DE 18 AÑOS.</p>
             </Container>
 
         </footer>

@@ -17,7 +17,7 @@ const Vinos = () => {
                             VinosListado.vinos.map((vino, index) => {
                                 return (
                                     <Col xs={12} md={6} lg={4} className={`animate__animated animate__fadeIn animate__fast animate__delay-${index}s`}>
-                                        <CuadradoVino titulo={`${vino.uno} ${vino.dos}`} varietal={vino.varietal} imagen={vino.imagen} slug={vino.slug} color={index % 2 === 0 ? '#ffc60b' : '#f4f1e8'} />
+                                        <CuadradoVino titulo={`${vino.uno} ${vino.dos}`} varietal={vino.varietal} imagen={vino.imagen} slug={vino.slug} bodega={vino.uno} />
                                     </Col>
                                 )
                             })

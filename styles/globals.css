@@ -83,18 +83,48 @@ img {
 
 .navbar-nav a {
   text-transform: uppercase;
-  color: white!important;
+  color: white;
 }
+
 @media (min-width: 768px){
   .navbar-nav a {
     margin-left: 1rem;
     margin-right: 1rem;
-  }
+  } 
+}
+
+.borde-menu {
+  border-right: 1px solid black;
+  color: black!important;
+}
+
+.nav-link-inicio {
+  margin-right: .5rem!important;
+  padding-right: .5rem!important;
+  margin-left: auto!important;
+  color: black!important;
+  background-color: transparent;
+  transition: all .3s ease;
+  max-width: 12rem;
+}
+
+.nav-link-inicio:hover {
+  background-color: var(--colorAzul);
+  color: white!important;
 }
 
 .nav-lola {
   background-color: var(--colorGrisOscuro);
   font-family: 'GothamBook';
+}
+
+.pregunta {
+  font-weight: bold;
+}
+
+.navbar-toggler {
+  border: none;
+  font-size: 2rem;
 }
 
 @media (max-width: 540px){

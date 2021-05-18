@@ -1,10 +1,11 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Head from 'next/head';
 import styled from '@emotion/styled';
 import {Row, Col, Container} from 'reactstrap';
 import Layout from '../../components/UI/Layout';
 import VinosListado from '../../vinos-lista.json';
 import {useRouter} from 'next/router';
+import CuadradoVino from '../../components/vinos/CuadradoVino.js';
 
 export async function getStaticPaths() {
 
@@ -31,6 +32,7 @@ export async function getStaticProps({params}) {
 const unVino = ({enlace}) => {
 
     const router = useRouter();
+    const [interesar, setInteresar] = useState(0);
 
     if (router.isFallback) {
         return (
@@ -70,18 +72,19 @@ const unVino = ({enlace}) => {
                 font-size: 6rem;
             }
 
-            &:before {
+            /* &:before {
                 content : "";
                 position: absolute;
-                /* left    : .5rem; */
                 left    : 0;
                 bottom  : 0;
                 top: -1rem;
                 height  : 5px;
                 width   : 3rem;
                 border-top: 8px solid ${vinoInfo.uno === 'Lola Montes' ? 'black' : 'white' };
-            }
+            } */
         `;
+
+        const Interesar = styled.h3``;
 
         const Texto = styled.div`
             font-family: 'GothamBook';
@@ -138,6 +141,8 @@ const unVino = ({enlace}) => {
             }
         `;
 
+        console.log(VinosListado)
+
         return (
             <>
             <Head>
@@ -151,7 +156,7 @@ const unVino = ({enlace}) => {
                     <Container>
                         <Row>
                             <Col md={8} lg={7}>
-                                <Titulo className="animate__animated animate__fadeInLeft">{vinoInfo.uno} {vinoInfo.dos} {vinoInfo.varietal}</Titulo>
+                                <Titulo className="animate__animated animate__fadeInLeft">{vinoInfo.uno} {vinoInfo.dos}<br/>{vinoInfo.varietal}</Titulo>
                                 <Texto className="animate__animated animate__fadeInLeft animate__delay-2s">
                                     {/* <p className="pregunta">{vinoInfo.uno === 'Circus' ? 'Reseña' : '¿Qué es?'}</p> */}
                                     <p>
@@ -208,6 +213,30 @@ const unVino = ({enlace}) => {
                                 <ImagenVino className="animate__animated animate__fadeInRight animate__delay-1s" src={`/images/vinos/${vinoInfo.imagen}`} alt={`${vinoInfo.uno} ${vinoInfo.dos} - ${vinoInfo.varietal}`} />
                             </Col>
                         </Row>
+                        <section className="py-5">
+                            {/* <Interesar>También te puede interesar</Interesar> */}
+                            <Row>
+                                {/* {
+                                    VinosListado.vinos.map((vino, index) => {
+                                        console.log('Index: ', index);
+                                        console.log('Interesar: ', interesar);
+                                        console.log('Varietal Info: ', vinoInfo.varietal, ' | Varietal Ahora: ', vino.varietal);
+                                        
+                                        if(
+                                            // vinoInfo.slug !== vino.slug &&
+                                            interesar < 3 &&
+                                            (vinoInfo.varietal == vino.varietal || index + interesar == VinosListado.vinos.length)) {
+                                            setInteresar(interesar + 1)
+                                            return (
+                                                <Col key={index} xs={12} md={6} lg={4} className={`animate__animated animate__fadeIn animate__fast animate__delay-${index}s`}>
+                                                    <CuadradoVino titulo={`${vino.uno} ${vino.dos}`} varietal={vino.varietal} imagen={vino.imagen} slug={vino.slug} bodega={vino.uno} />
+                                                </Col>
+                                            )
+                                        }
+                                    })
+                                } */}
+                            </Row>
+                        </section>
                     </Container>
                 </Fondo>
             </Layout>

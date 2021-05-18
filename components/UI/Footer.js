@@ -51,7 +51,10 @@ const Footer = () => {
                         <Lista>
                             <li><a href="https://tienda.bodegalolamontes.com/contacto/" target="_blank">CONTACTO</a></li>
                             <li><a href="mailto:tienda@bodegalolamontes.com">tienda@bodegalolamontes.com</a></li>
-                            <li><a href="#" target="_blank">FB - IG</a></li>
+                            <li className="mt-2">
+                                <a href="https://www.facebook.com/lolamonteswines" className="mr-3" target="_blank"><img style={{height: '2rem'}} src="/images/facebook.png" alt="Facebook - Bodega Lola Montes" /></a>
+                                <a href="https://www.instagram.com/lolamwines/" target="_blank"><img style={{height: '2rem'}} src="/images/instagram.png" alt="Instagram - Bodega Lola Montes" /></a>
+                            </li>
                         </Lista>
                     </Col>
                     <Col xs={12} sm={12} md={3} lg={3}>

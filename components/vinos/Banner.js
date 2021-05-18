@@ -9,8 +9,6 @@ const RowPer = styled(Row)`
 
 const Banner = ({entrada, numero}) => {
 
-    console.log('entrada ', entrada)
-
     return (
         <>
             <Row

@@ -12,6 +12,7 @@ const CuadradoVino = ({titulo, imagen, varietal, slug, bodega}) => {
         text-align: center;
         margin: 1.5rem 0; 
         transition: all .3s ease;
+        color: black;
         img {
             height: 30rem;
             transition: all .5s ease;

@@ -141,8 +141,6 @@ const unVino = ({enlace}) => {
             }
         `;
 
-        console.log(VinosListado)
-
         return (
             <>
             <Head>
@@ -214,27 +212,31 @@ const unVino = ({enlace}) => {
                             </Col>
                         </Row>
                         <section className="py-5">
-                            {/* <Interesar>También te puede interesar</Interesar> */}
+                            <Interesar>También te puede interesar</Interesar>
                             <Row>
-                                {/* {
+                                {
                                     VinosListado.vinos.map((vino, index) => {
-                                        console.log('Index: ', index);
-                                        console.log('Interesar: ', interesar);
-                                        console.log('Varietal Info: ', vinoInfo.varietal, ' | Varietal Ahora: ', vino.varietal);
-                                        
                                         if(
-                                            // vinoInfo.slug !== vino.slug &&
-                                            interesar < 3 &&
-                                            (vinoInfo.varietal == vino.varietal || index + interesar == VinosListado.vinos.length)) {
-                                            setInteresar(interesar + 1)
-                                            return (
-                                                <Col key={index} xs={12} md={6} lg={4} className={`animate__animated animate__fadeIn animate__fast animate__delay-${index}s`}>
-                                                    <CuadradoVino titulo={`${vino.uno} ${vino.dos}`} varietal={vino.varietal} imagen={vino.imagen} slug={vino.slug} bodega={vino.uno} />
-                                                </Col>
-                                            )
+                                            (vinoInfo.slug !== vino.slug) &&
+                                            (vinoInfo.varietal == vino.varietal)
+                                                ||
+                                            ((vinoInfo.varietal == 'White Blend' ||
+                                            vinoInfo.varietal == 'Rosé' ||
+                                            vinoInfo.varietal == 'Sauvignon Blanc' ||
+                                            vinoInfo.varietal == 'Syrah' ||
+                                            vinoInfo.varietal == 'Chardonnay')
+                                            && (vinoInfo.slug !== vino.slug)
+                                            && (vino.uno == 'Rocky')) ) {
+                                                return (
+                                                    <>
+                                                        <Col key={index} xs={12} md={4} lg={4} className={`animate__animated animate__fadeIn animate__fast animate__delay-1s`}>
+                                                            <CuadradoVino titulo={`${vino.uno} ${vino.dos}`} varietal={vino.varietal} imagen={vino.imagen} slug={vino.slug} bodega={vino.uno} />
+                                                        </Col>
+                                                    </>
+                                                )
                                         }
                                     })
-                                } */}
+                                }
                             </Row>
                         </section>
                     </Container>

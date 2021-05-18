@@ -155,25 +155,25 @@ const unVino = ({enlace}) => {
                         <Row>
                             <Col md={8} lg={7}>
                                 <Titulo className="animate__animated animate__fadeInLeft">{vinoInfo.uno} {vinoInfo.dos}<br/>{vinoInfo.varietal}</Titulo>
-                                <Texto className="animate__animated animate__fadeInLeft animate__delay-2s">
+                                <Texto className="animate__animated animate__fadeInLeft animate__delay-1s">
                                     {/* <p className="pregunta">{vinoInfo.uno === 'Circus' ? 'Reseña' : '¿Qué es?'}</p> */}
                                     <p>
                                         {vinoInfo.uno === 'Circus' ? vinoInfo.resena_es : vinoInfo.como_es}
                                     </p>
                                 </Texto>
-                                <Texto className="animate__animated animate__fadeInLeft animate__delay-3s">
+                                <Texto className="animate__animated animate__fadeInLeft animate__delay-1-5s">
                                     <p className="pregunta">{vinoInfo.uno === 'Circus' ? 'Región de viñedos' : '¿Para quién es?'}</p>
                                     <p className="respuesta">
                                         {vinoInfo.uno === 'Circus' ? vinoInfo.region_es : vinoInfo.para_quien_es}
                                     </p>
                                 </Texto>
-                                <Texto className="animate__animated animate__fadeInLeft animate__delay-4s">
+                                <Texto className="animate__animated animate__fadeInLeft animate__delay-2s">
                                     <p className="pregunta">{vinoInfo.uno === 'Circus' ? 'Guarda' : '¿Con qué?'}</p>
                                     <p className="respuesta">
                                     {vinoInfo.uno === 'Circus' ? vinoInfo.guarda_es : vinoInfo.maridaje_es}
                                     </p>
                                 </Texto>
-                                <Texto className="animate__animated animate__fadeInLeft animate__delay-5s">
+                                <Texto className="animate__animated animate__fadeInLeft animate__delay-2-5s">
                                     <p className="pregunta">{vinoInfo.uno === 'Circus' ? 'Color' : '¿Qué más?'}</p>
                                     <p className="respuesta">
                                         {vinoInfo.uno === 'Circus' ? vinoInfo.color_es : vinoInfo.que_mas_es}
@@ -182,19 +182,19 @@ const unVino = ({enlace}) => {
                                 {
                                     (vinoInfo.uno === 'Circus') ? (
                                         <>
-                                            <Texto className="animate__animated animate__fadeInLeft animate__delay-6s">
+                                            <Texto className="animate__animated animate__fadeInLeft animate__delay-3s">
                                                 <p className="pregunta">Nariz</p>
                                                 <p className="respuesta">
                                                    {vinoInfo.nariz_es}
                                                 </p>
                                             </Texto>
-                                            <Texto className="animate__animated animate__fadeInLeft animate__delay-7s">
+                                            <Texto className="animate__animated animate__fadeInLeft animate__delay-3-5s">
                                                 <p className="pregunta">Paladar</p>
                                                 <p className="respuesta">
                                                    {vinoInfo.paladar_es}
                                                 </p>
                                             </Texto>
-                                            <Texto className="animate__animated animate__fadeInLeft animate__delay-8s">
+                                            <Texto className="animate__animated animate__fadeInLeft animate__delay-4s">
                                                 <p className="pregunta">Maridaje</p>
                                                 <p className="respuesta">
                                                    {vinoInfo.maridaje_es}

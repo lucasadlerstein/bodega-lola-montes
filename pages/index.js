@@ -177,7 +177,7 @@ const Index = () => {
       //     setBannerNumber(bannerNumber + 1);
       //   }
       // }
-    }, 3500);
+    }, 2000);
   }
 
   const toggle = () => setIsOpen(!isOpen);
@@ -222,15 +222,15 @@ const Index = () => {
             </Col>
         </Row>
         <Titulo className="animate__animated animate__fadeIn">Bienvenido al mundo<br/>Lola Montes</Titulo>
-        <p style={{fontFamily: 'GothamBook'}} className="animate__animated animate__fadeIn animate__delay-1s">Elaboramos vinos con uvas seleccionadas de nuestros viñedos de Agrelo, Mendoza.</p>
-        <Cual className="animate__animated animate__fadeIn animate__delay-2s mb-0">¿Cuál vas a elegir hoy?</Cual>
+        <p style={{fontFamily: 'GothamBook'}} className="animate__animated animate__fadeIn animate__delay-0-5s">Elaboramos vinos con uvas seleccionadas de nuestros viñedos de Agrelo, Mendoza.</p>
+        <Cual className="animate__animated animate__fadeIn animate__delay-1s mb-0">¿Cuál vas a elegir hoy?</Cual>
 
-        <IconosAnimados className="animate__animated animate__fadeIn animate__delay-6s">
-          <IconoIzquierda className="animate__animated animate__fadeIn animate__delay-6s" src="/images/animaciones/Animación-HOME.gif" alt="Bodega Lola Montes" />
-          <IconoDerecha className="animate__animated animate__fadeIn animate__delay-6s" src="/images/animaciones/Animación-HOME-CINTA.gif" alt="Be Kind, Drink Wine" />
+        <IconosAnimados className="animate__animated animate__fadeIn animate__delay-3s">
+          <IconoIzquierda className="animate__animated animate__fadeIn animate__delay-3s" src="/images/animaciones/Animación-HOME.gif" alt="Bodega Lola Montes" />
+          <IconoDerecha className="animate__animated animate__fadeIn animate__delay-3s" src="/images/animaciones/Animación-HOME-CINTA.gif" alt="Be Kind, Drink Wine" />
         </IconosAnimados>
 
-        <div style={{position: 'relative', zIndex: '999'}} className="animate__animated animate__fadeIn animate__delay-6s">
+        <div style={{position: 'relative', zIndex: '999'}} className="animate__animated animate__fadeIn animate__delay-3-5s">
           <BtnIzquierda onClick={() => cambiarBanner('atras')} className="animate__animated">
             <img src="/images/arrow_izq.png" alt="Retroceder" />
           </BtnIzquierda>
@@ -249,7 +249,7 @@ const Index = () => {
         }
         
         <Link href="/vinos">
-          <QuieroConocer className="text-center animate__animated animate__faster animate__fadeInLeft animate__delay-7s">Quiero conocer<br/>todos los vinos</QuieroConocer>
+          <QuieroConocer className="text-center animate__animated animate__faster animate__fadeInLeft animate__delay-4-5s">Quiero conocer<br/>todos los vinos</QuieroConocer>
         </Link>
 
       </Container>

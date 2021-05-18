@@ -175,6 +175,17 @@ img {
 .animate__delay-16s { --animate-delay: 16s!important; animation-delay: 16s }
 .animate__delay-17s { --animate-delay: 17s!important; animation-delay: 17s }
 
+
+.animate__delay-0-5s { --animate-delay: 0.5s!important; animation-delay: 0.5s }
+.animate__delay-1-5s { --animate-delay: 1.5s!important; animation-delay: 1.5s }
+.animate__delay-2-5s { --animate-delay: 2.5s!important; animation-delay: 2.5s }
+.animate__delay-3-5s { --animate-delay: 3.5s!important; animation-delay: 3.5s }
+.animate__delay-4-5s { --animate-delay: 4.5s!important; animation-delay: 4.5s }
+.animate__delay-5-5s { --animate-delay: 5.5s!important; animation-delay: 5.5s }
+.animate__delay-6-5s { --animate-delay: 6.5s!important; animation-delay: 6.5s }
+.animate__delay-7-5s { --animate-delay: 7.5s!important; animation-delay: 7.5s }
+.animate__delay-8-5s { --animate-delay: 8.5s!important; animation-delay: 8.5s }
+
 .spinner {
   width: 40px;
   height: 40px;

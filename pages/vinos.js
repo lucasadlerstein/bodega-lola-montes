@@ -61,7 +61,7 @@ const Vinos = () => {
                     style={{backgroundColor: 'white'}}
                 >
                     <Container className="p-secc">
-                        <Row style={{justifyContent: 'center'}} className="mb-5">
+                        <Row style={{justifyContent: 'center'}} className="mb-5 animate__animated animate__fadeIn">
                             <Col sm={12} md={6} lg={4} className="mb-4">
                                 <SpanSelectName>Varietal</SpanSelectName>
                                 <SelectFiltro
@@ -92,7 +92,7 @@ const Vinos = () => {
                                 VinosListado.vinos.map((vino, index) => {
                                     if( (varietalSelected === 'todos' || varietalSelected === vino.varietal) && (lineaSelected === 'todas' || lineaSelected === vino.uno)  ) {
                                         return (
-                                            <Col key={index} xs={12} md={6} lg={4} className={`animate__animated animate__fadeIn animate__fast animate__delay-${index % 2 === 0 ? '1' : '0'}s`}>
+                                            <Col key={index} xs={12} md={6} lg={4} className={`animate__animated animate__fadeIn animate__fast animate__delay-${index % 2 === 0 ? '1' : '0-5'}s`}>
                                                 <CuadradoVino titulo={`${vino.uno} ${vino.dos}`} varietal={vino.varietal} imagen={vino.imagen} slug={vino.slug} bodega={vino.uno} />
                                             </Col>
                                         )

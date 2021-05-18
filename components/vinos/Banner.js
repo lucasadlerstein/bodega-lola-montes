@@ -15,13 +15,13 @@ const Banner = ({entrada, numero}) => {
                 className="mb-5" style={{justifyContent: 'center'}}
             >
                 <Col xs={4} sm={4} lg={3} className="p-0">
-                    <img style={{width: '95%'}} className={`img_banner_vino_1 animate__animated animate__faster ${(entrada === true) ? 'animate__fadeInLeftBig animate__delay-3s' : 'animate__fadeOutRightBig animate__delay-1s'}`} src={`/images/vinos/Rocky/rocky_malbec.png`} alt="Rocky - Malbec" />
+                    <img style={{width: '95%'}} className={`img_banner_vino_1 animate__animated animate__faster ${(entrada === true) ? 'animate__fadeInLeftBig animate__delay-1-5s' : 'animate__fadeOutRightBig animate__delay-0-5s'}`} src={`/images/vinos/Rocky/rocky_malbec.png`} alt="Rocky - Malbec" />
                 </Col>
                 <Col xs={4} sm={4} lg={3} className="p-0">
-                    <img style={{width: '95%'}} className={`img_banner_vino_2 animate__animated animate__faster ${(entrada === true) ? 'animate__fadeInLeftBig animate__delay-4s' : 'animate__fadeOutRightBig animate__delay-2s'}`} src={`/images/vinos/Lola/lola_malbec.png`} alt="Lola Montes - Malbec" />
+                    <img style={{width: '95%'}} className={`img_banner_vino_2 animate__animated animate__faster ${(entrada === true) ? 'animate__fadeInLeftBig animate__delay-2s' : 'animate__fadeOutRightBig animate__delay-1s'}`} src={`/images/vinos/Lola/lola_malbec.png`} alt="Lola Montes - Malbec" />
                 </Col>
                 <Col xs={4} sm={4} lg={3} className="p-0">
-                    <img style={{width: '95%'}} className={`img_banner_vino_3 animate__animated animate__faster ${(entrada === true) ? 'animate__fadeInLeftBig animate__delay-5s' : 'animate__fadeOutRightBig animate__delay-3s'}`} src={`/images/vinos/Circus/Roble/circus_roble_malbec.png`} alt="Circus Roble - Malbec" />
+                    <img style={{width: '95%'}} className={`img_banner_vino_3 animate__animated animate__faster ${(entrada === true) ? 'animate__fadeInLeftBig animate__delay-2-5s' : 'animate__fadeOutRightBig animate__delay-1-5s'}`} src={`/images/vinos/Circus/Roble/circus_roble_malbec.png`} alt="Circus Roble - Malbec" />
                 </Col>
             </Row>
         </>

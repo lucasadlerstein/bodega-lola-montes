@@ -143,6 +143,24 @@ img {
   }
 }
 
+@media (max-width: 991px){
+  .img_banner_vino_1 {
+    margin-left: 4rem;
+  }
+  .img_banner_vino_3 {
+    margin-left: -4rem;
+  }
+}
+
+@media (max-width: 540px){
+  .img_banner_vino_1 {
+    margin-left: 4rem;
+  }
+  .img_banner_vino_3 {
+    margin-left: -8rem;
+  }
+}
+
 
 .animate__delay-6s { --animate-delay: 6s!important; animation-delay: 6s }
 .animate__delay-7s { --animate-delay: 7s!important; animation-delay: 7s }

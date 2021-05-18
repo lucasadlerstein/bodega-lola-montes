@@ -90,6 +90,9 @@ const IconoIzquierda = styled.img`
   top: -4rem;
   left: 8rem;
   width: 12rem;
+  @media (max-width: 991px){
+    left: -2rem;
+  }
 `;
 
 const IconoDerecha = styled.img`
@@ -124,17 +127,17 @@ const BtnArrow = styled.button`
 `;
 
 const BtnIzquierda = styled(BtnArrow)`
-   left: -3rem;
-  @media (min-width: 600px){
-    left: -5rem;
-  }
-  @media (min-width: 768px){
-    left: 0;
-  }
+    left: -1rem;
+    @media (min-width: 600px){
+      left: -5rem;
+    }
+    @media (min-width: 768px){
+      left: 0;
+    }
 `;
 
 const BtnDerecha = styled(BtnArrow)`
-  right: -3rem;
+  right: -1rem;
   @media (min-width: 600px){
     right: -5rem;
   }
@@ -227,7 +230,7 @@ const Index = () => {
           <IconoDerecha className="animate__animated animate__fadeIn animate__delay-6s" src="/images/animaciones/Animación-HOME-CINTA.gif" alt="Be Kind, Drink Wine" />
         </IconosAnimados>
 
-        <div style={{position: 'relative'}} className="animate__animated animate__fadeIn animate__delay-6s">
+        <div style={{position: 'relative', zIndex: '999'}} className="animate__animated animate__fadeIn animate__delay-6s">
           <BtnIzquierda onClick={() => cambiarBanner('atras')} className="animate__animated">
             <img src="/images/arrow_izq.png" alt="Retroceder" />
           </BtnIzquierda>

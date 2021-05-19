@@ -22,13 +22,13 @@ const Banner4 = ({entrada, numero}) => {
                 className="mb-5" style={{justifyContent: 'center'}}
             >
                 <Col xs={4} sm={4} lg={3} className="p-0">
-                    <img style={{width: '95%'}} className={`img_banner_vino_1 animate__animated animate__faster ${(entrada === true) ? 'animate__fadeInUpBig' : 'animate__fadeOutUpBig animate__delay-0-5s'}`} src={`/images/vinos/Lola/lola_cabernet.png`} alt="Lola Montes - Cabernet Sauvingnon" />
+                    <img style={{width: '95%'}} className={`img_banner_vino_1 animate__animated animate__faster ${(entrada === true) ? 'animate__fadeInUpBig animate__delay-0-5s' : 'animate__fadeOutUpBig animate__delay-0-5s'}`} src={`/images/vinos/Lola/lola_cabernet.png`} alt="Lola Montes - Cabernet Sauvingnon" />
                 </Col>
                 <Col xs={4} sm={4} lg={3} className="p-0">
-                    <img style={{width: '95%'}} className={`img_banner_vino_2 animate__animated animate__faster ${(entrada === true) ? 'animate__fadeInUpBig animate__delay-0-5s' : 'animate__fadeOutUpBig animate__delay-1s'}`} src={`/images/vinos/Lola/lola_malbec.png`} alt="Lola Montes - Malbec" />
+                    <img style={{width: '95%'}} className={`img_banner_vino_2 animate__animated animate__faster ${(entrada === true) ? 'animate__fadeInUpBig animate__delay-1s' : 'animate__fadeOutUpBig animate__delay-1s'}`} src={`/images/vinos/Lola/lola_malbec.png`} alt="Lola Montes - Malbec" />
                 </Col>
                 <Col xs={4} sm={4} lg={3} className="p-0">
-                    <img style={{width: '95%'}} className={`img_banner_vino_3 animate__animated animate__faster ${(entrada === true) ? 'animate__fadeInUpBig animate__delay-1s' : 'animate__fadeOutUpBig animate__delay-1-5s'}`} src={`/images/vinos/Lola/lola_red_blend.png`} alt="Lola Montes - Red Blend" />
+                    <img style={{width: '95%'}} className={`img_banner_vino_3 animate__animated animate__faster ${(entrada === true) ? 'animate__fadeInUpBig animate__delay-1-5s' : 'animate__fadeOutUpBig animate__delay-1-5s'}`} src={`/images/vinos/Lola/lola_red_blend.png`} alt="Lola Montes - Red Blend" />
                 </Col>
             </Row>
         </>

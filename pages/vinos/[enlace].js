@@ -56,9 +56,12 @@ const unVino = ({enlace}) => {
         const Fondo = styled.main`
             background-color: ${vinoInfo.uno === 'Circus' ? 'var(--colorAzul);' : vinoInfo.uno === 'Lola Montes' ? 'var(--colorAmarillo);' : 'var(--colorChicle);' };
             text-align: left;
-            padding: 10rem 0;
+            padding: 5rem 0;
             color: ${vinoInfo.uno === 'Lola Montes' ? 'black' : 'white' };
             white-space: pre-line;
+            @media (min-width: 768px){
+                padding: 10rem 0;
+            }
         `;
 
         const Titulo = styled.h1`
@@ -84,7 +87,16 @@ const unVino = ({enlace}) => {
             } */
         `;
 
-        const Interesar = styled.h3``;
+        const Interesar = styled.h3`
+            margin-top: 3rem;
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 2.5rem;
+            font-size: 3rem;
+            @media (min-width: 991px){
+                margin-top: 6rem;
+            }
+        `;
 
         const Texto = styled.div`
             font-family: 'GothamBook';
@@ -211,7 +223,7 @@ const unVino = ({enlace}) => {
                                 <ImagenVino className="animate__animated animate__fadeInRight animate__delay-1s" src={`/images/vinos/${vinoInfo.imagen}`} alt={`${vinoInfo.uno} ${vinoInfo.dos} - ${vinoInfo.varietal}`} />
                             </Col>
                         </Row>
-                        <section className="py-5">
+                        <section className="py-5 animate__animated animate__fadeIn animate__delay-4-5s">
                             <Interesar>También te puede interesar</Interesar>
                             <Row>
                                 {

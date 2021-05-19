@@ -28,7 +28,7 @@ const Layout = ({children}) => {
                 />
                 <link
                     rel="preload"
-                    href="/fonts/Gotham/Gotham-Ultra.ttf"
+                    href="/fonts/Gotham/GothamUltra.ttf"
                     as="font"
                     crossOrigin=""
                 />
@@ -40,7 +40,7 @@ const Layout = ({children}) => {
                 />
                 <link
                     rel="preload"
-                    href="/fonts/Gotham/Gotham-Bold.ttf"
+                    href="/fonts/Gotham/Gotham-Bold.otf"
                     as="font"
                     crossOrigin=""
                 />

@@ -103,6 +103,7 @@ const unVino = ({enlace}) => {
             margin: 2rem 0;
             position: relative;
             .pregunta {
+                font-family: 'Gotham';
                 text-transform: uppercase;
                 font-weight: bold;
                 padding: 0;
@@ -110,7 +111,7 @@ const unVino = ({enlace}) => {
             }
             .respuesta {
 
-                &:after {
+                /* &:after {
                     content : "";
                     position: absolute;
                     left    : 0;
@@ -119,7 +120,7 @@ const unVino = ({enlace}) => {
                     height  : 5px;
                     width   : 2rem;
                     border-bottom: 4px solid ${vinoInfo.uno === 'Circus' ? 'var(--colorChicle);' : 'black' };
-                }
+                } */
             }
         `;
 
@@ -240,11 +241,9 @@ const unVino = ({enlace}) => {
                                             && (vinoInfo.slug !== vino.slug)
                                             && (vino.uno == 'Rocky')) ) {
                                                 return (
-                                                    <>
-                                                        <Col key={index} xs={12} md={4} lg={4} className={`animate__animated animate__fadeIn animate__fast animate__delay-1s`}>
-                                                            <CuadradoVino titulo={`${vino.uno} ${vino.dos}`} varietal={vino.varietal} imagen={vino.imagen} slug={vino.slug} bodega={vino.uno} />
-                                                        </Col>
-                                                    </>
+                                                    <Col key={index} xs={12} md={4} lg={4} className={`animate__animated animate__fadeIn animate__fast animate__delay-1s`}>
+                                                        <CuadradoVino titulo={`${vino.uno} ${vino.dos}`} varietal={vino.varietal} imagen={vino.imagen} slug={vino.slug} bodega={vino.uno} />
+                                                    </Col>
                                                 )
                                         }
                                     })

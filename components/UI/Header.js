@@ -63,7 +63,7 @@ const Header = () => {
                                 <NavLink className="text-white" href="/vinos">Vinos</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink className="text-white" target="_blank" href="/vinos">Presskit</NavLink>
+                                <NavLink className="text-white" target="_blank" href="https://drive.google.com/drive/u/0/folders/1sQIOrLH3XsfTlqI43bEUQuM_fdSet6hY">Presskit</NavLink>
                             </NavItem>
                             <NavItem>
                                 <NavLink className="text-white" target="_blank" href="https://tienda.bodegalolamontes.com/contacto">Contacto</NavLink>

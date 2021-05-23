@@ -154,30 +154,33 @@ const Index = () => {
   const [entrada, setEntrada] = useState(true);
 
   const cambiarBanner = (cual) => {
-    setEntrada(false);
+    // setEntrada(false);
     let randomN = bannerNumber;
     
     while(randomN === bannerNumber || randomN === 1) {
       randomN = Math.floor(Math.random() * (4)) + 1;
     }
   
-    setTimeout(() => {
-      setEntrada(true);
-      setBannerNumber(randomN);
-      // if(cual === 'atras') {
-      //   if(bannerNumber === 0) {
-      //     setBannerNumber(4);
-      //   } else {
-      //     setBannerNumber(bannerNumber - 1);
-      //   }
-      // } else {
-      //   if(bannerNumber === 4) {
-      //     setBannerNumber(0);
-      //   } else {
-      //     setBannerNumber(bannerNumber + 1);
-      //   }
-      // }
-    }, 2000);
+    setBannerNumber(randomN);
+  
+
+    // setTimeout(() => {
+    //   setEntrada(true);
+    //   setBannerNumber(randomN);
+    //   // if(cual === 'atras') {
+    //   //   if(bannerNumber === 0) {
+    //   //     setBannerNumber(4);
+    //   //   } else {
+    //   //     setBannerNumber(bannerNumber - 1);
+    //   //   }
+    //   // } else {
+    //   //   if(bannerNumber === 4) {
+    //   //     setBannerNumber(0);
+    //   //   } else {
+    //   //     setBannerNumber(bannerNumber + 1);
+    //   //   }
+    //   // }
+    // }, 2000);
   }
 
   const toggle = () => setIsOpen(!isOpen);
@@ -227,7 +230,7 @@ const Index = () => {
 
         <IconosAnimados className="animate__animated animate__fadeIn animate__delay-3s">
           <IconoIzquierda className="animate__animated animate__fadeIn animate__delay-3s" src="/images/animaciones/Animación-HOME.gif" alt="Bodega Lola Montes" />
-          <IconoDerecha className="animate__animated animate__fadeIn animate__delay-3s" src="/images/animaciones/Animación-HOME-CINTA.gif" alt="Be Kind, Drink Wine" />
+          {/* <IconoDerecha className="animate__animated animate__fadeIn animate__delay-3s" src="/images/animaciones/Animación-HOME-CINTA.gif" alt="Be Kind, Drink Wine" /> */}
         </IconosAnimados>
 
         <div style={{position: 'relative', zIndex: '999'}} className="animate__animated animate__fadeIn animate__delay-3-5s">

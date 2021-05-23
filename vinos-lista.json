@@ -1,6 +1,115 @@
 {
     "vinos": [
         {
+            "uno": "Lola Montes",
+            "dos": "",
+            "dos_eng": "Red Blend",
+            "varietal": "Red Blend",
+            "imagen": "Lola/lola_red_blend.png",
+            "slug": "lola-montes-red-blend",
+            "como_es": "De color rojo rubí brillante de intensidad media con reflejos violáceos.\nSu aroma tiene en primer plano ciruelas, moras y cerezas que crean un buen caudal frutal, junto a especias dulces y tonos dulces.\nDeja en la boca sabores de frutas rojas y bayas.",
+            "region_es": "Mendoza, Argentina.",
+            "guarda_es": "Dos años de guarda.",
+            "para_quien_es": "Es un vino perfecto para iniciarse, hecho para paladares delicados.",
+            "que_mas_es": "Dos años de guarda.\nAlc/Vol: 12,5%.\nMendoza, Argentina.",
+            "maridaje_es": "Al ser un vino ligero, es ideal para acompañar carnes suaves grilladas, pastas rellenas y tapeos de quesos y fiambres.",
+
+            "como_en": "Medium intensity bright ruby red with violet reflections.\nIts aroma has plums, blackberries and cherries in the foreground, creating a good fruity flow, together with sweet spices and sweet tones.\nIt leaves red fruit and berry flavors in the mouth.",
+            "region_en": "Mendoza, Argentina.",
+            "guarda_en": "Two years of maturation.",
+            "para_quien_en": "It is a perfect wine for beginners, made for delicate palates.",
+            "maridaje_en": "As it is a light wine, it is ideal to accompany soft grilled meats, stuffed pasta and cheese and delicatessen appetizers..",
+            "que_mas_en": "Two years of maturation\nAlc/Vol: 12.5%.\nMendoza, Argentina."
+        },
+        {
+            "uno": "Lola Montes",
+            "dos": "",
+            "dos_eng": "White Blend",
+            "varietal": "White Blend",
+            "imagen": "Lola/lola_white_blend.png",
+            "slug": "lola-montes-white-blend",
+            "como_es": "Es un blanco frutado y fresco, con un dulzor delicado. Tiene reflejos dorados y un color amarillo pálido.\nRecuerda a duraznos, damascos, peras, manzanas verdes, uvas y flores blancas.\nEn boca, es sabroso y tiene un cuerpo ligero que lo hace fluir suave intensificándose al final",
+            "para_quien_es": "Para los que cuenten con un carácter juvenil y expresivo.",
+            "maridaje_es": "Quesos, picadas, tapeos, frutos de mar fritos y también para combinar con frutas e improvisar algún cóctel veraniego.",
+            "que_mas_es": "Dos años de guarda.\nAlc/Vol: 12,1%.\nMendoza, Argentina.",
+            "region_es": "Mendoza, Argentina.",
+            "guarda_es": "Dos años de guarda.",
+
+            "como_en": "It is a fruity and fresh white, with a delicate sweetness. It has golden reflections and a pale yellow color.\nIt evokes peaches, apricots, pears, green apples, grapes and white flowers.\nOn the palate, it is tasty and has a light body that makes it flow smoothly intensifying at the end",
+            "para_quien_en": "For those with a youthful and expressive character.",
+            "maridaje_en": "Cheeses, finger food, tapas, fried seafood and also to combine with fruits and improvise some summer cocktail.",
+            "region_en": "Mendoza, Argentina.",
+            "guarda_en": "Two years of maturation.",
+            "que_mas_en": "Two years of maturation\nAlc/Vol: 12.1%.\nMendoza, Argentina."
+        },
+        {
+            "uno": "Lola Montes",
+            "dos": "",
+            "dos_eng": "Malbec",
+            "varietal": "Malbec",
+            "imagen": "Lola/lola_malbec.png",
+            "slug": "lola-montes-malbec",
+            "como_es": "De color rojo rubí con reflejos violáceos.\nEs fácil de tomar, fluye ligero con sabores de frutas rojas y bayas.\nSe nota la presencia de cerezas y frutillas en primer plano junto a tonos de especias dulces. Es de cuerpo medio, jugoso y expresivo.",
+            "para_quien_es": "Para todos los paladares, pero especialmente para ser compartido con amigos.",
+            "maridaje_es": "Excelente opción para acompañar carnes grilladas, pastas rellenas con salsas livianas o tablas de quesos y fiambres.",
+            "que_mas_es": "Dos años de guarda.\nAlc/Vol: 13,8%.\nAgrelo, Mendoza, Argentina.",
+            "region_es": "Agrelo, Mendoza, Argentina.",
+            "guarda_es": "Dos años de guarda.",
+
+            "como_en": "Ruby red with violet reflections.\nEasy to drink, it flows lightly with red fruit and berry flavors. You can notice the presence of cherries and strawberries in the foreground along with sweet spice tones. It is medium bodied, juicy and expressive.",
+            "para_quien_en": "For all palates, but specially to be shared with friends.",
+            "maridaje_en": "Excellent option to accompany grilled meats, stuffed pasta with light sauces or cheese and delicatessen.",
+            "region_en": "Agrelo, Mendoza, Argentina.",
+            "guarda_en": "Two years of maturation.",
+            "que_mas_en": "Two years of maturation\nAlc/Vol: 13.8%.\nAgrelo, Mendoza, Argentina."
+        },
+        {
+            "uno": "Lola Montes",
+            "dos": "",
+            "dos_eng": "Cabernet Sauvignon",
+            "varietal": "Cabernet Sauvignon",
+            "imagen": "Lola/lola_cabernet.png",
+            "slug": "lola-montes-cabernet-sauvignon",
+            "como_es": "De color rojo rubí, de intensidad media con reflejos violáceos. Sus aromas llevan la presencia de especias y pimientos. En boca es ligero y tiene un cuerpo medio, jugoso y expresivo.",
+            "para_quien_es": "Ideal para los amantes de los tintos expresivos y aromáticos.",
+            "maridaje_es": "Acompaña muy bien a las carnes grilladas, rojas y blancas. También es ideal para platos con un tenor de gratitud alto.",
+            "que_mas_es": "Dos años de guarda.\nAlc/Vol: 12,5%.\nAgrelo, Mendoza, Argentina.",
+            "region_es": "Agrelo, Mendoza, Argentina.",
+            "guarda_es": "Dos años de guarda.",
+
+            "como_en": "Ruby red, medium intensity with violet reflections. Its aromas carry the presence of spices and peppers. It is light on the palate and has a medium body, juicy and expressive.",
+            "para_quien_en": "Ideal for lovers of expressive and aromatic reds.",
+            "maridaje_en": "It goes well with grilled meats, red and white. It is also ideal for dishes with a high tenor of gratitude.",
+            "region_en": "Agrelo, Mendoza, Argentina.",
+            "guarda_en": "Two years of maturation.",
+            "que_mas_en": "Two years of maturation\nAlc/Vol: 12.5%.\nAgrelo, Mendoza, Argentina."
+        },
+        {
+            "uno": "Lola Montes",
+            "dos": "",
+            "dos_eng": "",
+            "varietal": "Rosé",
+            "imagen": "Lola/lola_rose.png",
+            "slug": "lola-montes-rose",
+            "como_es": "El color es rojo leve con reflejos rosados brillantes. La textura es refrescante en boca y tiene aromas de frutos rojos en primer plano como cerezas, frutillas y ciruelas frescas. También brinda un delicado dejo floral que recuerda a las golosinas.\nEs de paladar seco y sabroso y fluye equilibrado, delicado y refrescante.",
+            "para_quien_es": "Para quien quiera iniciar los encuentros y endulzar las charlas.",
+            "maridaje_es": "Tiene la amplitud necesaria cómo para ser excelente para acompañar tapeos, platos fríos, pizzas o ensaladas.",
+            "que_mas_es": "Dos años de guarda.\nAlc/Vol: 13,2%.\nMendoza, Argentina.",
+            "region_es": "Mendoza, Argentina.",
+            "guarda_es": "Dos años de guarda.",
+
+            "como_en": "The color is light red with bright pink reflections. The texture is refreshing in mouth and has aromas of red fruits in the foreground like cherries, strawberries and fresh plums. It also has a delicate floral hint that reminds us of sweets. \nIt is dry and tasty on the palate and has a balanced, delicate and refreshing flow.",
+            "para_quien_en": "For those who want to start the gatherings and sweeten the talks.",
+            "maridaje_en": "It has the necessary range as to be excellent to accompany tapas, cold dishes, pizzas or salads.",
+            "region_en": "Mendoza, Argentina.",
+            "guarda_en": "Two years of maturation.",
+            "que_mas_en": "Two years of maturation\nAlc/Vol: 13.2%.\nMendoza, Argentina."
+        },
+
+
+
+
+        {
             "uno": "Circus",
             "dos": "Classic",
             "varietal": "Sauvignon Blanc",
@@ -206,112 +315,7 @@
             "maridaje_en": "Roasted red meat, roast pork, stuffed pasta and hard cheese."
         },
 
-        {
-            "uno": "Lola Montes",
-            "dos": "",
-            "dos_eng": "Red Blend",
-            "varietal": "Red Blend",
-            "imagen": "Lola/lola_red_blend.png",
-            "slug": "lola-montes-red-blend",
-            "como_es": "De color rojo rubí brillante de intensidad media con reflejos violáceos.\nSu aroma tiene en primer plano ciruelas, moras y cerezas que crean un buen caudal frutal, junto a especias dulces y tonos dulces.\nDeja en la boca sabores de frutas rojas y bayas.",
-            "region_es": "Mendoza, Argentina.",
-            "guarda_es": "Dos años de guarda.",
-            "para_quien_es": "Es un vino perfecto para iniciarse, hecho para paladares delicados.",
-            "que_mas_es": "Dos años de guarda.\nAlc/Vol: 12,5%.\nMendoza, Argentina.",
-            "maridaje_es": "Al ser un vino ligero, es ideal para acompañar carnes suaves grilladas, pastas rellenas y tapeos de quesos y fiambres.",
-
-            "como_en": "Medium intensity bright ruby red with violet reflections.\nIts aroma has plums, blackberries and cherries in the foreground, creating a good fruity flow, together with sweet spices and sweet tones.\nIt leaves red fruit and berry flavors in the mouth.",
-            "region_en": "Mendoza, Argentina.",
-            "guarda_en": "Two years of maturation.",
-            "para_quien_en": "It is a perfect wine for beginners, made for delicate palates.",
-            "maridaje_en": "As it is a light wine, it is ideal to accompany soft grilled meats, stuffed pasta and cheese and delicatessen appetizers..",
-            "que_mas_en": "Two years of maturation\nAlc/Vol: 12.5%.\nMendoza, Argentina."
-        },
-        {
-            "uno": "Lola Montes",
-            "dos": "",
-            "dos_eng": "White Blend",
-            "varietal": "White Blend",
-            "imagen": "Lola/lola_white_blend.png",
-            "slug": "lola-montes-white-blend",
-            "como_es": "Es un blanco frutado y fresco, con un dulzor delicado. Tiene reflejos dorados y un color amarillo pálido.\nRecuerda a duraznos, damascos, peras, manzanas verdes, uvas y flores blancas.\nEn boca, es sabroso y tiene un cuerpo ligero que lo hace fluir suave intensificándose al final",
-            "para_quien_es": "Para los que cuenten con un carácter juvenil y expresivo.",
-            "maridaje_es": "Quesos, picadas, tapeos, frutos de mar fritos y también para combinar con frutas e improvisar algún cóctel veraniego.",
-            "que_mas_es": "Dos años de guarda.\nAlc/Vol: 12,1%.\nMendoza, Argentina.",
-            "region_es": "Mendoza, Argentina.",
-            "guarda_es": "Dos años de guarda.",
-
-            "como_en": "It is a fruity and fresh white, with a delicate sweetness. It has golden reflections and a pale yellow color.\nIt evokes peaches, apricots, pears, green apples, grapes and white flowers.\nOn the palate, it is tasty and has a light body that makes it flow smoothly intensifying at the end",
-            "para_quien_en": "For those with a youthful and expressive character.",
-            "maridaje_en": "Cheeses, finger food, tapas, fried seafood and also to combine with fruits and improvise some summer cocktail.",
-            "region_en": "Mendoza, Argentina.",
-            "guarda_en": "Two years of maturation.",
-            "que_mas_en": "Two years of maturation\nAlc/Vol: 12.1%.\nMendoza, Argentina."
-        },
-        {
-            "uno": "Lola Montes",
-            "dos": "",
-            "dos_eng": "Malbec",
-            "varietal": "Malbec",
-            "imagen": "Lola/lola_malbec.png",
-            "slug": "lola-montes-malbec",
-            "como_es": "De color rojo rubí con reflejos violáceos.\nEs fácil de tomar, fluye ligero con sabores de frutas rojas y bayas.\nSe nota la presencia de cerezas y frutillas en primer plano junto a tonos de especias dulces. Es de cuerpo medio, jugoso y expresivo.",
-            "para_quien_es": "Para todos los paladares, pero especialmente para ser compartido con amigos.",
-            "maridaje_es": "Excelente opción para acompañar carnes grilladas, pastas rellenas con salsas livianas o tablas de quesos y fiambres.",
-            "que_mas_es": "Dos años de guarda.\nAlc/Vol: 13,8%.\nAgrelo, Mendoza, Argentina.",
-            "region_es": "Agrelo, Mendoza, Argentina.",
-            "guarda_es": "Dos años de guarda.",
-
-            "como_en": "Ruby red with violet reflections.\nEasy to drink, it flows lightly with red fruit and berry flavors. You can notice the presence of cherries and strawberries in the foreground along with sweet spice tones. It is medium bodied, juicy and expressive.",
-            "para_quien_en": "For all palates, but specially to be shared with friends.",
-            "maridaje_en": "Excellent option to accompany grilled meats, stuffed pasta with light sauces or cheese and delicatessen.",
-            "region_en": "Agrelo, Mendoza, Argentina.",
-            "guarda_en": "Two years of maturation.",
-            "que_mas_en": "Two years of maturation\nAlc/Vol: 13.8%.\nAgrelo, Mendoza, Argentina."
-        },
-        {
-            "uno": "Lola Montes",
-            "dos": "",
-            "dos_eng": "Cabernet Sauvignon",
-            "varietal": "Cabernet Sauvignon",
-            "imagen": "Lola/lola_cabernet.png",
-            "slug": "lola-montes-cabernet-sauvignon",
-            "como_es": "De color rojo rubí, de intensidad media con reflejos violáceos. Sus aromas llevan la presencia de especias y pimientos. En boca es ligero y tiene un cuerpo medio, jugoso y expresivo.",
-            "para_quien_es": "Ideal para los amantes de los tintos expresivos y aromáticos.",
-            "maridaje_es": "Acompaña muy bien a las carnes grilladas, rojas y blancas. También es ideal para platos con un tenor de gratitud alto.",
-            "que_mas_es": "Dos años de guarda.\nAlc/Vol: 12,5%.\nAgrelo, Mendoza, Argentina.",
-            "region_es": "Agrelo, Mendoza, Argentina.",
-            "guarda_es": "Dos años de guarda.",
-
-            "como_en": "Ruby red, medium intensity with violet reflections. Its aromas carry the presence of spices and peppers. It is light on the palate and has a medium body, juicy and expressive.",
-            "para_quien_en": "Ideal for lovers of expressive and aromatic reds.",
-            "maridaje_en": "It goes well with grilled meats, red and white. It is also ideal for dishes with a high tenor of gratitude.",
-            "region_en": "Agrelo, Mendoza, Argentina.",
-            "guarda_en": "Two years of maturation.",
-            "que_mas_en": "Two years of maturation\nAlc/Vol: 12.5%.\nAgrelo, Mendoza, Argentina."
-        },
-        {
-            "uno": "Lola Montes",
-            "dos": "",
-            "dos_eng": "",
-            "varietal": "Rosé",
-            "imagen": "Lola/lola_rose.png",
-            "slug": "lola-montes-rose",
-            "como_es": "El color es rojo leve con reflejos rosados brillantes. La textura es refrescante en boca y tiene aromas de frutos rojos en primer plano como cerezas, frutillas y ciruelas frescas. También brinda un delicado dejo floral que recuerda a las golosinas.\nEs de paladar seco y sabroso y fluye equilibrado, delicado y refrescante.",
-            "para_quien_es": "Para quien quiera iniciar los encuentros y endulzar las charlas.",
-            "maridaje_es": "Tiene la amplitud necesaria cómo para ser excelente para acompañar tapeos, platos fríos, pizzas o ensaladas.",
-            "que_mas_es": "Dos años de guarda.\nAlc/Vol: 13,2%.\nMendoza, Argentina.",
-            "region_es": "Mendoza, Argentina.",
-            "guarda_es": "Dos años de guarda.",
-
-            "como_en": "The color is light red with bright pink reflections. The texture is refreshing in mouth and has aromas of red fruits in the foreground like cherries, strawberries and fresh plums. It also has a delicate floral hint that reminds us of sweets. \nIt is dry and tasty on the palate and has a balanced, delicate and refreshing flow.",
-            "para_quien_en": "For those who want to start the gatherings and sweeten the talks.",
-            "maridaje_en": "It has the necessary range as to be excellent to accompany tapas, cold dishes, pizzas or salads.",
-            "region_en": "Mendoza, Argentina.",
-            "guarda_en": "Two years of maturation.",
-            "que_mas_en": "Two years of maturation\nAlc/Vol: 13.2%.\nMendoza, Argentina."
-        },
-
+        
 
 
         {

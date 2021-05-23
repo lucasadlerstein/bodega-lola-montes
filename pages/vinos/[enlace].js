@@ -67,7 +67,7 @@ const unVino = ({enlace}) => {
         const Titulo = styled.h1`
             font-weight: bold;
             font-size: 4rem;
-            border-bottom: 4px solid ${vinoInfo.uno === 'Circus' ? 'var(--colorChicle);' : 'black' };
+            border-bottom: 4px solid ${vinoInfo.uno === 'Lola Montes' ? 'black' : 'white' };
             text-transform: uppercase;
             width: fit-content;
             position: relative;

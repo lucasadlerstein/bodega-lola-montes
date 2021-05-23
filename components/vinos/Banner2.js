@@ -19,13 +19,13 @@ const Banner2 = ({entrada, numero}) => {
                 className="mb-5" style={{justifyContent: 'center'}}
             >
                 <Col xs={4} sm={4} lg={3} className="p-0">
-                    <img style={{width: '95%'}} className={`img_banner_vino_1 animate__animated animate__faster ${(entrada === true) ? 'animate__rollIn animate__delay-0-5s' : 'animate__rollOut animate__delay-0-5s'}`} src={`/images/vinos/Rocky/rocky_cabernet_sauvignon.png`} alt="Rocky - Cabernet Sauvingnon" />
+                    <img style={{width: '95%'}} className={`img_banner_vino_1 animate__animated animate__faster ${(entrada === true) ? 'animate__rollIn animate__delay-0s' : 'animate__rollOut animate__delay-0-5s'}`} src={`/images/vinos/Rocky/rocky_cabernet_sauvignon.png`} alt="Rocky - Cabernet Sauvingnon" />
                 </Col>
                 <Col xs={4} sm={4} lg={3} className="p-0">
-                    <img style={{width: '95%'}} className={`img_banner_vino_2 animate__animated animate__faster ${(entrada === true) ? 'animate__rollIn animate__delay-1s' : 'animate__rollOut animate__delay-1s'}`} src={`/images/vinos/Rocky/rocky_malbec.png`} alt="Rocky - Malbec" />
+                    <img style={{width: '95%'}} className={`img_banner_vino_2 animate__animated animate__faster ${(entrada === true) ? 'animate__rollIn animate__delay-0-5s' : 'animate__rollOut animate__delay-1s'}`} src={`/images/vinos/Rocky/rocky_malbec.png`} alt="Rocky - Malbec" />
                 </Col>
                 <Col xs={4} sm={4} lg={3} className="p-0">
-                    <img style={{width: '95%'}} className={`img_banner_vino_3 animate__animated animate__faster ${(entrada === true) ? 'animate__rollIn animate__delay-1-5s' : 'animate__rollOut animate__delay-1-5s'}`} src={`/images/vinos/Rocky/rocky_red_blend.png`} alt="Rocky - Red Blend" />
+                    <img style={{width: '95%'}} className={`img_banner_vino_3 animate__animated animate__faster ${(entrada === true) ? 'animate__rollIn animate__delay-1s' : 'animate__rollOut animate__delay-1-5s'}`} src={`/images/vinos/Rocky/rocky_red_blend.png`} alt="Rocky - Red Blend" />
                 </Col>
             </Row>
         </>

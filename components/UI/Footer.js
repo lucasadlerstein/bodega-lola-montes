@@ -31,7 +31,6 @@ const Footer = () => {
                     <Col xs={6} sm={6} md={2} lg={2}>
                         <Lista>
                             <li><a href="https://tienda.bodegalolamontes.com/" target="_blank">TIENDA</a></li>
-                            <li><a href="https://tienda.bodegalolamontes.com/lola-montes/" target="_blank">Gift Shop</a></li>
                             <li><a href="https://tienda.bodegalolamontes.com/como-comprar/" target="_blank">Cómo comprar</a></li>
                             <li><a href="https://tienda.bodegalolamontes.com/aceptacion-de-los-terminos-y-condiciones/" target="_blank">Términos y condiciones</a></li>
                             <li><a href="https://tienda.bodegalolamontes.com/contacto/" target="_blank">Contacto</a></li>

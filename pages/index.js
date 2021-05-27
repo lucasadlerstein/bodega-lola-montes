@@ -76,6 +76,7 @@ const IconosAnimados = styled.div`
   display: flex;
   justify-content: space-around;
   position: relative;
+  z-index: 150;
   @media (max-width: 768px){
     display: none;
   }

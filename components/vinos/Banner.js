@@ -15,14 +15,13 @@ const VideoFondo = styled.video`
   width: auto;
   height: auto;
   max-height: 40.5rem;
+  max-width: 100%;
   position: absolute;
   /* top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);       */
   /* z-index: -100; */
-  background-size: cover;
-
-
+  /* background-size: cover; */
 `;
 
 const Banner = ({entrada, numero}) => {
@@ -33,11 +32,11 @@ const Banner = ({entrada, numero}) => {
 
         setTimeout(() => {
             setMostrarVideo(true);
-        }, 1500);
+        }, 2500);
 
         setTimeout(() => {
             setMostrarVideo(false);
-        }, 7500);
+        }, 6000);
 
         // eslint-disable-next-line
     }, [])
@@ -47,14 +46,15 @@ const Banner = ({entrada, numero}) => {
             <Row
                 className="mb-5" style={{justifyContent: 'center', position: 'relative'}}            
             >
-                {/* {mostrarVideo ? (
+                {mostrarVideo ? (
                     <VideoFondo
-                        src="/images/Lluvia_Emojis.mp4"
+                        src="/images/EmojiFelizParticulas.mp4"
                         type="video/mp4"
                         autoPlay
                         muted
+                        loop
                     /> 
-                ) : null} */}
+                ) : null}
 
                 <Col xs={4} sm={4} lg={3} className="p-0">
                     <Link href="/vinos?linea=Rocky">

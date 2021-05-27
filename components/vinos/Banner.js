@@ -27,17 +27,17 @@ const VideoFondo = styled.video`
 
 const Banner = ({entrada, numero}) => {
 
-    const [mostrarVideo, setMostrarVideo] = useState(true);
+    const [mostrarVideo, setMostrarVideo] = useState(false);
 
     useEffect(() => {
 
-        // setTimeout(() => {
-        //     setMostrarVideo(true);
-        // }, 1500);
+        setTimeout(() => {
+            setMostrarVideo(true);
+        }, 1500);
 
-        // setTimeout(() => {
-        //     setMostrarVideo(false);
-        // }, 7500);
+        setTimeout(() => {
+            setMostrarVideo(false);
+        }, 7500);
 
         // eslint-disable-next-line
     }, [])
@@ -47,15 +47,14 @@ const Banner = ({entrada, numero}) => {
             <Row
                 className="mb-5" style={{justifyContent: 'center', position: 'relative'}}            
             >
-                {mostrarVideo ? (
+                {/* {mostrarVideo ? (
                     <VideoFondo
                         src="/images/Lluvia_Emojis.mp4"
                         type="video/mp4"
                         autoPlay
                         muted
-                        loop
                     /> 
-                ) : null}
+                ) : null} */}
 
                 <Col xs={4} sm={4} lg={3} className="p-0">
                     <Link href="/vinos?linea=Rocky">

@@ -9,24 +9,13 @@ const RowPer = styled(Row)`
 `;
 
 
-const VideoFondo = styled.video`
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  max-height: 40.5rem;
-  max-width: 100%;
-  position: absolute;
-  /* top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);       */
-  /* z-index: -100; */
-  /* background-size: cover; */
-`;
+
 
 const Banner = ({entrada, numero}) => {
 
     const [mostrarVideo, setMostrarVideo] = useState(false);
+
+
 
     useEffect(() => {
 
@@ -41,20 +30,33 @@ const Banner = ({entrada, numero}) => {
         // eslint-disable-next-line
     }, [])
 
+    const VideoFondo = styled.video`
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        max-height: 40.5rem;
+        max-width: 100%;
+        position: absolute;
+        visibility: ${mostrarVideo ? 'block' : 'hidden'};
+        /* top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);       */
+        /* z-index: -100; */
+        /* background-size: cover; */
+    `;
+
     return (
         <>
             <Row
                 className="mb-5" style={{justifyContent: 'center', position: 'relative'}}            
             >
-                {mostrarVideo ? (
-                    <VideoFondo
-                        src="/images/EmojiFelizParticulas.mp4"
-                        type="video/mp4"
-                        autoPlay
-                        muted
-                        loop
-                    /> 
-                ) : null}
+                <VideoFondo
+                    src="/images/EmojiFelizParticulas.mp4"
+                    type="video/mp4"
+                    autoPlay
+                    muted
+                /> 
 
                 <Col xs={4} sm={4} lg={3} className="p-0">
                     <Link href="/vinos?linea=Rocky">

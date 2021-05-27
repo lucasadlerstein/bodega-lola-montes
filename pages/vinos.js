@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import Head from 'next/head';
 import Layout from '../components/UI/Layout';
 import CuadradoVino from '../components/vinos/CuadradoVino';
@@ -25,6 +25,24 @@ const Vinos = () => {
     const [varietalSelected, setVarietalSelected] = useState('todos');
     const [lineaSelected, setLineaSelected] = useState('todas');
     const [mostrando, setMostrando] = useState(0);
+
+    useEffect(() => {
+
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const linea = urlParams.get('linea');
+        const varietal = urlParams.get('varietal');
+
+        if(varietal) {
+            setVarietalSelected(varietal);
+        }
+        if(linea) {
+            setLineaSelected(linea);
+        }
+
+
+        // eslint-disable-next-line
+    }, []);
 
     const varietales = [
         'Malbec',
@@ -66,6 +84,7 @@ const Vinos = () => {
                                 <SpanSelectName>Varietal</SpanSelectName>
                                 <SelectFiltro
                                     onChange={(e) => handleChangeVarietal(e)}
+                                    value={varietalSelected}
                                 >
                                     <option value="todos">Todos</option>
                                     {
@@ -79,6 +98,7 @@ const Vinos = () => {
                                 <SpanSelectName>Línea</SpanSelectName>
                                 <SelectFiltro
                                     onChange={(e) => handleChangeLinea(e)}
+                                    value={lineaSelected}
                                 >
                                     <option value="todas">Todas</option>
                                     <option value="Circus">Circus Wines</option>

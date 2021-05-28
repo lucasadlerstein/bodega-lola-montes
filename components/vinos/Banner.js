@@ -57,6 +57,7 @@ const Banner = ({entrada, numero}) => {
                     type="video/mp4"
                     autoPlay
                     muted
+                    playsinline
                 /> 
 
                 <Col xs={4} sm={4} lg={3} className="p-0">

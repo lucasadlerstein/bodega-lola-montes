@@ -56,6 +56,7 @@ const Banner = ({entrada, numero}) => {
                     src={ancho <= 768 ? '/images/EmojiFelizCelular.mp4' : '/images/EmojiFelizParticulas.mp4'}
                     type="video/mp4"
                     autoPlay
+                    loop
                     muted
                     playsinline
                 /> 

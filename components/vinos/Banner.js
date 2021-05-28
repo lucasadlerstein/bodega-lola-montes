@@ -14,10 +14,11 @@ const RowPer = styled(Row)`
 const Banner = ({entrada, numero}) => {
 
     const [mostrarVideo, setMostrarVideo] = useState(false);
-
-
+    const [ancho, setAncho] = useState(null);
 
     useEffect(() => {
+
+        setAncho(window.innerWidth);
 
         setTimeout(() => {
             setMostrarVideo(true);
@@ -52,7 +53,7 @@ const Banner = ({entrada, numero}) => {
                 className="mb-5" style={{justifyContent: 'center', position: 'relative'}}            
             >
                 <VideoFondo
-                    src="/images/EmojiFelizParticulas.mp4"
+                    src={ancho <= 768 ? '/images/EmojiFelizCelular.mp4' : '/images/EmojiFelizParticulas.mp4'}
                     type="video/mp4"
                     autoPlay
                     muted

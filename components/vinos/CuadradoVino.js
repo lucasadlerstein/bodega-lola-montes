@@ -33,16 +33,19 @@ const CuadradoVino = ({titulo, imagen, varietal, slug, bodega}) => {
         margin: .5rem 0;
     `;
 
-    const Varietal = styled.p`
-
+    const VerTienda = styled.a`
+        color: black;
+        cursor: pointer;
+        transition: all .5s ease;
     `;
+
 
     const VerMas = styled.a`
         background-color: black;
         color: white;
         display: block;
         width: 12rem;
-        margin: 0 auto;
+        margin: 0 auto 1rem;
         border-radius: .5rem;
         border: none;
         padding: .35rem;
@@ -61,10 +64,11 @@ const CuadradoVino = ({titulo, imagen, varietal, slug, bodega}) => {
                 </a>
             </Link>
             <Bodega>{titulo}</Bodega>
-            <Varietal>{varietal}</Varietal>
+            <p>{varietal}</p>
             <Link href={`/vinos/${slug}`}>
                 <VerMas>Ver más</VerMas>
-            </Link>
+            </Link>            
+            <VerTienda target="_blank" href={(bodega === 'Circus') ? 'https://tienda.bodegalolamontes.com/circus-wines/' : (bodega === 'Lola Montes') ? 'https://tienda.bodegalolamontes.com/lola-montes/' : 'https://tienda.bodegalolamontes.com/rocky-wines/'} >VER TIENDA</VerTienda>
         </Cuadrado>
     );
 }

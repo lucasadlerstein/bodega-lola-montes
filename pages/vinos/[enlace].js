@@ -138,6 +138,20 @@ const unVino = ({enlace}) => {
             }
         `;
 
+        const VerTienda = styled.a`
+            color: ${vinoInfo.uno === 'Lola Montes' ? 'black' : 'white' };
+            cursor: pointer;
+            border: 2px solid transparent;
+            padding: 1rem 0;
+            transition: all .5s ease;
+            &:hover {
+                color: ${vinoInfo.uno === 'Lola Montes' ? 'black' : 'white' };
+                border-bottom: 2px solid ${vinoInfo.uno === 'Lola Montes' ? 'black' : 'white' };
+
+            }
+        `;
+
+
         const Estampilla = styled.img`
             @media (max-width: 768px){
                 display: none;
@@ -216,6 +230,8 @@ const unVino = ({enlace}) => {
                                         </>
                                     ) : null
                                 }
+                                <VerTienda className="animate__animated animate__fadeInLeft animate__delay-4-5s" target="_blank" href={(vinoInfo.uno === 'Circus') ? 'https://tienda.bodegalolamontes.com/circus-wines/' : (vinoInfo.uno === 'Lola Montes') ? 'https://tienda.bodegalolamontes.com/lola-montes/' : 'https://tienda.bodegalolamontes.com/rocky-wines/'} >VER TIENDA</VerTienda>
+
                             </Col>
                             <Col md={4} lg={5} className="text-center position-relative">
                                 {/* <Estampilla className="animate__animated animate__fadeIn animate__delay-4s"

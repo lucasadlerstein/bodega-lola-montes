@@ -1,0 +1,21 @@
+{
+    "Header": {
+        "Inicio": "Home",
+        "Vinos": "Wines",
+        "Contacto": "Contact",
+        "Tienda": "Shop",
+        "Presskit": "Presskit",
+        "ES": "ESP",
+        "ENG": "ENG"
+    },
+    "Footer": {
+        "Tienda": "SHOP",
+        "ComoComprar": "How to buy",
+        "TYC": "Terms and conditions",
+        "Contacto": "Contact",
+        "Bodega": "THE WINERY",
+        "Recursos": "Resources",
+        "MediosPago": "Payment methods",
+        "Moderacion": "DRINK IN MODERATION. SALE TO MINORS UNDER 18 YEARS OLD IS FORBIDDEN."
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "Header": {
+        "Inicio": "Home",
+        "Vinos": "Wines",
+        "Contacto": "Contact",
+        "Tienda": "Shop",
+        "ES": "ESP",
+        "ENG": "ENG"
+    },
+    "Titulo": "Welcome to the world",
+    "Subtitulo": "We make wines with selected grapes from our vineyards in Agrelo, Mendoza.",
+    "Cual": "Which one are you going to choose today?",
+    "BtnConocer": {
+        "01": "I want to know",
+        "02": "all the wines"
+    } 
+}

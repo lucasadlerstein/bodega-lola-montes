@@ -1,0 +1,21 @@
+{
+    "Header": {
+        "Inicio": "Inicio",
+        "Vinos": "Vinos",
+        "Contacto": "Contacto",
+        "Tienda": "Tienda",
+        "Presskit": "Presskit",
+        "ES": "ESP",
+        "ENG": "ENG"
+    },
+    "Footer": {
+        "Tienda": "TIENDA",
+        "ComoComprar": "Cómo comprar",
+        "TYC": "Términos y condiciones",
+        "Contacto": "CONTACTO",
+        "Bodega": "LA BODEGA",
+        "Recursos": "Recursos",
+        "MediosPago": "Medios de pago",
+        "Moderacion": "BEBER CON MODERACIÓN. PROHIBIDA LA VENTA A MENORES DE 18 AÑOS."
+    }
+}

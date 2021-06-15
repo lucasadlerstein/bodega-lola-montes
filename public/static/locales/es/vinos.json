@@ -1,0 +1,23 @@
+{
+    "Vinos": {
+        "Varietal": "Varietal",
+        "Linea": "Línea",
+        "Todas": "Todas",
+        "Todos": "Todos",
+        "VerMas": "Ver más",
+        "VerTienda": "VER TIENDA"
+    },
+    "UnVino": {
+        "ParaQuien": "¿PARA QUIÉN ES?",
+        "ConQue": "¿CON QUÉ?",
+        "QueMas": "¿QUÉ MÁS?",
+        "VerTienda": "VER TIENDA",
+        "Interesar": "También te puede interesar",
+        "Region": "REGIÓN DE VIÑEDOS",
+        "Guarda": "GUARDA",
+        "Color": "COLOR",
+        "Nariz": "NARIZ",
+        "Paladar": "PALADAR",
+        "Maridaje": "MARIDAJE"
+    }
+}

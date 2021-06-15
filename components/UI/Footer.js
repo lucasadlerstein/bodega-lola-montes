@@ -2,6 +2,7 @@ import React from 'react';
 import {Row, Col, Container, FormGroup} from 'reactstrap';
 import styled from '@emotion/styled';
 import Link from 'next/link';
+import {withTranslation} from '../../i18n';
 
 const Lista = styled.ul`
     padding: 0;
@@ -13,7 +14,7 @@ const Lista = styled.ul`
     
 `;
 
-const Footer = () => {
+const Footer = ({t}) => {
     return (
         <footer
             style={{backgroundColor: 'var(--colorGrisOscuro)', fontSize: '1.4rem'}}
@@ -30,25 +31,25 @@ const Footer = () => {
                     </Col>
                     <Col xs={6} sm={6} md={2} lg={2}>
                         <Lista>
-                            <li><a href="https://tienda.bodegalolamontes.com/" target="_blank">TIENDA</a></li>
-                            <li><a href="https://tienda.bodegalolamontes.com/como-comprar/" target="_blank">Cómo comprar</a></li>
-                            <li><a href="https://tienda.bodegalolamontes.com/aceptacion-de-los-terminos-y-condiciones/" target="_blank">Términos y condiciones</a></li>
-                            <li><a href="https://tienda.bodegalolamontes.com/contacto/" target="_blank">Contacto</a></li>
+                            <li><a href="https://tienda.bodegalolamontes.com/" target="_blank">{t('Footer.Tienda')}</a></li>
+                            <li><a href="https://tienda.bodegalolamontes.com/como-comprar/" target="_blank">{t('Footer.ComoComprar')}</a></li>
+                            <li><a href="https://tienda.bodegalolamontes.com/aceptacion-de-los-terminos-y-condiciones/" target="_blank">{t('Footer.TYC')}</a></li>
+                            <li><a href="https://tienda.bodegalolamontes.com/contacto/" target="_blank">{t('Footer.Contacto')}</a></li>
                         </Lista>
                     </Col>
                     <Col xs={6} sm={6} md={2} lg={2}>
                         <Lista>
-                            <li><a href="#" target="_blank">LA BODEGA</a></li>
+                            <li><a href="#" target="_blank">{t('Footer.Bodega')}</a></li>
                             <li><a href="#" target="_blank">Lola Montes</a></li>
                             <li><a href="#" target="_blank">Rocky Just Red</a></li>
                             <li><a href="#" target="_blank">Circus Roble</a></li>
                             <li><a href="#" target="_blank">Circus Classic</a></li>
-                            <li><a href="#" target="_blank">Recursos</a></li>
+                            <li><a href="#" target="_blank">{t('Footer.Recursos')}</a></li>
                         </Lista>
                     </Col>
                     <Col xs={12} sm={12} md={3} lg={3}>
                         <Lista>
-                            <li><a href="https://tienda.bodegalolamontes.com/contacto/" target="_blank">CONTACTO</a></li>
+                            <li><a href="https://tienda.bodegalolamontes.com/contacto/" target="_blank">{t('Footer.Contacto')}</a></li>
                             <li><a href="mailto:tienda@bodegalolamontes.com">tienda@bodegalolamontes.com</a></li>
                             <li className="mt-2">
                                 <a href="https://www.facebook.com/lolamonteswines" className="mr-3" target="_blank"><img style={{height: '2rem'}} src="/images/facebook.png" alt="Facebook - Bodega Lola Montes" /></a>
@@ -60,18 +61,23 @@ const Footer = () => {
                         <Lista
                             className="text-right mobile-text-center"
                         >
-                            <li className="mb-2">Medios de pago</li>
+                            <li className="mb-2">{t('Footer.MediosPago')}</li>
                             <li>
                                 <img src="/images/logos-medios-de-pago-min.png" alt="Medios de pago"/>
                             </li>
                         </Lista>
                     </Col>
                 </Row>
-                <p style={{fontFamily: 'GothamBook'}} className="text-white mt-3 text-center">BEBER CON MODERACIÓN. PROHIBIDA LA VENTA A MENORES DE 18 AÑOS.</p>
+                <p style={{fontFamily: 'GothamBook'}} className="text-white mt-3 text-center">{t('Footer.Moderacion')}</p>
             </Container>
 
         </footer>
     );
 }
  
-export default Footer;
+ 
+Footer.getInitialProps = async () => ({
+    namespacesRequired: ['common'],
+  });
+  
+  export default withTranslation('common')(Footer);

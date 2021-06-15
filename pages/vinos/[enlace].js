@@ -6,6 +6,7 @@ import Layout from '../../components/UI/Layout';
 import VinosListado from '../../vinos-lista.json';
 import {useRouter} from 'next/router';
 import CuadradoVino from '../../components/vinos/CuadradoVino.js';
+import {withTranslation, i18n} from '../../i18n';
 
 export async function getStaticPaths() {
 
@@ -13,7 +14,7 @@ export async function getStaticPaths() {
         params: { enlace: enlace.slug }
     }))
 
-    return { paths, fallback: true }
+    return { paths, fallback: false }
 }
 
 export async function getStaticProps({params}) {
@@ -29,7 +30,7 @@ export async function getStaticProps({params}) {
     }
 }
 
-const unVino = ({enlace}) => {
+const unVino = ({enlace, t}) => {
 
     const router = useRouter();
     const [interesar, setInteresar] = useState(0);
@@ -185,52 +186,97 @@ const unVino = ({enlace}) => {
                                 <Texto className="animate__animated animate__fadeInLeft animate__delay-1s">
                                     {/* <p className="pregunta">{vinoInfo.uno === 'Circus' ? 'Reseña' : '¿Qué es?'}</p> */}
                                     <p>
-                                        {vinoInfo.uno === 'Circus' ? vinoInfo.resena_es : vinoInfo.como_es}
+                                        {
+                                            i18n.language === 'es' ? (
+                                                vinoInfo.uno === 'Circus' ? vinoInfo.resena_es : vinoInfo.como_es
+                                            ) : (
+                                                vinoInfo.uno === 'Circus' ? vinoInfo.resena_en : vinoInfo.como_en
+                                            )
+                                        }
                                     </p>
                                 </Texto>
                                 <Texto className="animate__animated animate__fadeInLeft animate__delay-1-5s">
-                                    <p className="pregunta">{vinoInfo.uno === 'Circus' ? 'Región de viñedos' : '¿Para quién es?'}</p>
+                                    <p className="pregunta">{vinoInfo.uno === 'Circus' ? t('UnVino.Region') : t('UnVino.ParaQuien')}</p>
                                     <p className="respuesta">
-                                        {vinoInfo.uno === 'Circus' ? vinoInfo.region_es : vinoInfo.para_quien_es}
+                                    {
+                                        i18n.language === 'es' ? (
+                                                vinoInfo.uno === 'Circus' ? vinoInfo.region_es : vinoInfo.para_quien_es
+                                            ) : (
+                                                vinoInfo.uno === 'Circus' ? vinoInfo.region_en : vinoInfo.para_quien_en
+                                            )
+                                    }
                                     </p>
                                 </Texto>
                                 <Texto className="animate__animated animate__fadeInLeft animate__delay-2s">
-                                    <p className="pregunta">{vinoInfo.uno === 'Circus' ? 'Guarda' : '¿Con qué?'}</p>
+                                    <p className="pregunta">{vinoInfo.uno === 'Circus' ? t('UnVino.Guarda') : t('UnVino.ConQue')}</p>
                                     <p className="respuesta">
-                                    {vinoInfo.uno === 'Circus' ? vinoInfo.guarda_es : vinoInfo.maridaje_es}
+                                    {
+                                        i18n.language === 'es' ? (
+                                            vinoInfo.uno === 'Circus' ? vinoInfo.guarda_es : vinoInfo.maridaje_es
+                                        ) : (
+                                            vinoInfo.uno === 'Circus' ? vinoInfo.guarda_en : vinoInfo.maridaje_en
+                                        )
+                                    }
+                                    
                                     </p>
                                 </Texto>
                                 <Texto className="animate__animated animate__fadeInLeft animate__delay-2-5s">
-                                    <p className="pregunta">{vinoInfo.uno === 'Circus' ? 'Color' : '¿Qué más?'}</p>
+                                    <p className="pregunta">{vinoInfo.uno === 'Circus' ? t('UnVino.Color') : t('UnVino.QueMas')}</p>
                                     <p className="respuesta">
-                                        {vinoInfo.uno === 'Circus' ? vinoInfo.color_es : vinoInfo.que_mas_es}
+                                    {
+                                        i18n.language === 'es' ? (
+                                            vinoInfo.uno === 'Circus' ? vinoInfo.color_es : vinoInfo.que_mas_es
+                                        ) : (
+                                            vinoInfo.uno === 'Circus' ? vinoInfo.color_en : vinoInfo.que_mas_en
+                                        )
+                                    }
+                                        
                                     </p>
                                 </Texto>
                                 {
                                     (vinoInfo.uno === 'Circus') ? (
                                         <>
                                             <Texto className="animate__animated animate__fadeInLeft animate__delay-3s">
-                                                <p className="pregunta">Nariz</p>
+                                                <p className="pregunta">{t('UnVino.Nariz')}</p>
                                                 <p className="respuesta">
-                                                   {vinoInfo.nariz_es}
+                                                   
+                                                {
+                                                    i18n.language === 'es' ? (
+                                                        vinoInfo.nariz_es
+                                                    ) : (
+                                                        vinoInfo.nariz_en
+                                                    )
+                                                }
                                                 </p>
                                             </Texto>
                                             <Texto className="animate__animated animate__fadeInLeft animate__delay-3-5s">
-                                                <p className="pregunta">Paladar</p>
+                                                <p className="pregunta">{t('UnVino.Paladar')}</p>
                                                 <p className="respuesta">
-                                                   {vinoInfo.paladar_es}
+                                                {
+                                                    i18n.language === 'es' ? (
+                                                        vinoInfo.paladar_es
+                                                    ) : (
+                                                        vinoInfo.paladar_en
+                                                    )
+                                                }
                                                 </p>
                                             </Texto>
                                             <Texto className="animate__animated animate__fadeInLeft animate__delay-4s">
-                                                <p className="pregunta">Maridaje</p>
+                                                <p className="pregunta">{t('UnVino.Maridaje')}</p>
                                                 <p className="respuesta">
-                                                   {vinoInfo.maridaje_es}
+                                                {
+                                                    i18n.language === 'es' ? (
+                                                        vinoInfo.maridaje_es
+                                                    ) : (
+                                                        vinoInfo.maridaje_en
+                                                    )
+                                                }
                                                 </p>
                                             </Texto>
                                         </>
                                     ) : null
                                 }
-                                <VerTienda className="animate__animated animate__fadeInLeft animate__delay-4-5s" target="_blank" href={(vinoInfo.uno === 'Circus') ? 'https://tienda.bodegalolamontes.com/circus-wines/' : (vinoInfo.uno === 'Lola Montes') ? 'https://tienda.bodegalolamontes.com/lola-montes/' : 'https://tienda.bodegalolamontes.com/rocky-wines/'} >VER TIENDA</VerTienda>
+                                <VerTienda className="animate__animated animate__fadeInLeft animate__delay-4-5s" target="_blank" href={(vinoInfo.uno === 'Circus') ? 'https://tienda.bodegalolamontes.com/circus-wines/' : (vinoInfo.uno === 'Lola Montes') ? 'https://tienda.bodegalolamontes.com/lola-montes/' : 'https://tienda.bodegalolamontes.com/rocky-wines/'} >{t('Vinos.VerTienda')}</VerTienda>
 
                             </Col>
                             <Col md={4} lg={5} className="text-center position-relative">
@@ -241,7 +287,7 @@ const unVino = ({enlace}) => {
                             </Col>
                         </Row>
                         <section className="py-5 animate__animated animate__fadeIn animate__delay-4-5s">
-                            <Interesar>También te puede interesar</Interesar>
+                            <Interesar>{t('UnVino.Interesar')}</Interesar>
                             <Row>
                                 {
                                     VinosListado.vinos.map((vino, index) => {
@@ -275,4 +321,10 @@ const unVino = ({enlace}) => {
 
 }
  
-export default unVino;
+
+ 
+// unVino.getInitialProps = async () => ({
+//     namespacesRequired: ['vinos'],
+//   });
+  
+export default withTranslation('vinos')(unVino);

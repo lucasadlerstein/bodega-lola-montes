@@ -6,6 +6,9 @@ import VinosListado from '../vinos-lista.json';
 import {Container, Row, Col} from 'reactstrap';
 import styled from '@emotion/styled';
 
+import { withTranslation } from '../i18n';
+
+
 const SelectFiltro = styled.select`
     border: none;
     padding: 1rem .5rem;
@@ -20,7 +23,7 @@ const SpanSelectName = styled.span`
     font-weight: bold;
 `;
 
-const Vinos = () => {
+const Vinos = ({t}) => {
 
     const [varietalSelected, setVarietalSelected] = useState('todos');
     const [lineaSelected, setLineaSelected] = useState('todas');
@@ -81,12 +84,12 @@ const Vinos = () => {
                     <Container className="p-secc">
                         <Row style={{justifyContent: 'center'}} className="mb-5 animate__animated animate__fadeIn">
                             <Col sm={12} md={6} lg={4} className="mb-4">
-                                <SpanSelectName>Varietal</SpanSelectName>
+                                <SpanSelectName>{t('Vinos.Varietal')}</SpanSelectName>
                                 <SelectFiltro
                                     onChange={(e) => handleChangeVarietal(e)}
                                     value={varietalSelected}
                                 >
-                                    <option value="todos">Todos</option>
+                                    <option value="todos">{t('Vinos.Todos')}</option>
                                     {
                                         varietales.map(vari => (
                                             <option key={vari} value={vari}>{vari}</option>
@@ -95,12 +98,12 @@ const Vinos = () => {
                                 </SelectFiltro>
                             </Col>
                             <Col sm={12} md={6} lg={3}>
-                                <SpanSelectName>Línea</SpanSelectName>
+                                <SpanSelectName>{t('Vinos.Linea')}</SpanSelectName>
                                 <SelectFiltro
                                     onChange={(e) => handleChangeLinea(e)}
                                     value={lineaSelected}
                                 >
-                                    <option value="todas">Todas</option>
+                                    <option value="todas">{t('Vinos.Todas')}</option>
                                     <option value="Circus">Circus Wines</option>
                                     <option value="Rocky">Rocky Wines</option>
                                     <option value="Lola Montes">Lola Montes</option>
@@ -127,4 +130,8 @@ const Vinos = () => {
     );
 }
  
-export default Vinos;
+Vinos.getInitialProps = async () => ({
+    namespacesRequired: ['vinos'],
+  });
+  
+  export default withTranslation('vinos')(Vinos);

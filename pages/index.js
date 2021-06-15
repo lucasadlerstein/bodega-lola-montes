@@ -9,6 +9,8 @@ import Banner3 from '../components/vinos/Banner3';
 import Banner4 from '../components/vinos/Banner4';
 import Banner5 from '../components/vinos/Banner5';
 import { Container, Row, Col, Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem, NavbarText } from 'reactstrap';
+import { withTranslation, i18n } from '../i18n';
+
 
 const Titulo = styled.h1`
   font-size: 4.5rem;
@@ -67,9 +69,7 @@ const BtnIdioma = styled.button`
     &:focus {
         outline: none;
     }
-    &:first-of-type {
-        border-right: 3px solid var(--colorChicle);
-    }
+
 `;
 
 const IconosAnimados = styled.div`
@@ -147,7 +147,7 @@ const BtnDerecha = styled(BtnArrow)`
   }
 `;
 
-const Index = () => {
+const Index = ({t}) => {
 
   const [isOpen, setIsOpen] = useState(false);
   const [bannerNumber, setBannerNumber] = useState(1);
@@ -203,13 +203,13 @@ const Index = () => {
                     <Collapse isOpen={isOpen} navbar>
                         <Nav className={`ml-auto ${isOpen ? 'borde-menu' : ''}`} navbar>
                             <NavItem>
-                                <NavLink style={{color: 'black'}} className="nav-link-inicio" href="/vinos">Vinos</NavLink>
+                                <NavLink style={{color: 'black'}} className="nav-link-inicio" href="/vinos">{t('Header.Vinos')}</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink style={{color: 'black'}} className="nav-link-inicio" target="_blank" href="https://tienda.bodegalolamontes.com/contacto">Contacto</NavLink>
+                                <NavLink style={{color: 'black'}} className="nav-link-inicio" target="_blank" href="https://tienda.bodegalolamontes.com/contacto">{t('Header.Contacto')}</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink style={{color: 'black'}} className="nav-link-inicio" target="_blank" href="https://tienda.bodegalolamontes.com">Tienda</NavLink>
+                                <NavLink style={{color: 'black'}} className="nav-link-inicio" target="_blank" href="https://tienda.bodegalolamontes.com">{t('Header.Tienda')}</NavLink>
                             </NavItem>
                         </Nav>
                     </Collapse>
@@ -220,14 +220,15 @@ const Index = () => {
             </Col>
             <Col>
                 <Idiomas>
-                    <BtnIdioma style={{color: 'var(--colorChicle)'}} >ESP</BtnIdioma>
-                    <BtnIdioma>ENG</BtnIdioma>
+                    <BtnIdioma
+                      onClick={() => i18n.changeLanguage(i18n.language === 'en' ? 'es' : 'en')}
+                    >{i18n.language === 'en' ? 'ESP' : 'ENG'}</BtnIdioma>
                 </Idiomas>
             </Col>
         </Row>
-        <Titulo className="animate__animated animate__fadeIn">Bienvenido al mundo<br/>Lola Montes</Titulo>
-        <p style={{fontFamily: 'GothamBook'}} className="animate__animated animate__fadeIn animate__delay-0-5s">Elaboramos vinos con uvas seleccionadas de nuestros viñedos de Agrelo, Mendoza.</p>
-        <Cual className="animate__animated animate__fadeIn animate__delay-1s mb-0">¿Cuál vas a elegir hoy?</Cual>
+        <Titulo className="animate__animated animate__fadeIn">{t('Titulo')}<br/>Lola Montes</Titulo>
+        <p style={{fontFamily: 'GothamBook'}} className="animate__animated animate__fadeIn animate__delay-0-5s">{t('Subtitulo')}</p>
+        <Cual className="animate__animated animate__fadeIn animate__delay-1s mb-0">{t('Cual')}</Cual>
 
         <IconosAnimados className="animate__animated animate__fadeIn animate__delay-3s">
           <IconoIzquierda className="animate__animated animate__fadeIn animate__delay-3s" src="/images/animaciones/Animación-HOME.gif" alt="Bodega Lola Montes" />
@@ -253,7 +254,7 @@ const Index = () => {
         }
         
         <Link href="/vinos">
-          <QuieroConocer className="text-center animate__animated animate__faster animate__fadeInLeft animate__delay-4-5s">Quiero conocer<br/>todos los vinos</QuieroConocer>
+          <QuieroConocer className="text-center animate__animated animate__faster animate__fadeInLeft animate__delay-4-5s">{t('BtnConocer.01')}<br/>{t('BtnConocer.02')}</QuieroConocer>
         </Link>
 
       </Container>
@@ -262,4 +263,8 @@ const Index = () => {
   );
 }
  
-export default Index;
+Index.getInitialProps = async () => ({
+  namespacesRequired: ['inicio'],
+});
+
+export default withTranslation('inicio')(Index);

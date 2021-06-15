@@ -1,8 +1,9 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import Link from 'next/link';
+import {withTranslation} from '../../i18n';
 
-const CuadradoVino = ({titulo, imagen, varietal, slug, bodega}) => {
+const CuadradoVino = ({titulo, imagen, varietal, slug, bodega, t}) => {
 
 
     const Cuadrado = styled.div`
@@ -66,11 +67,16 @@ const CuadradoVino = ({titulo, imagen, varietal, slug, bodega}) => {
             <Bodega>{titulo}</Bodega>
             <p>{varietal}</p>
             <Link href={`/vinos/${slug}`}>
-                <VerMas>Ver más</VerMas>
+                <VerMas>{t('Vinos.VerMas')}</VerMas>
             </Link>            
-            <VerTienda target="_blank" href={(bodega === 'Circus') ? 'https://tienda.bodegalolamontes.com/circus-wines/' : (bodega === 'Lola Montes') ? 'https://tienda.bodegalolamontes.com/lola-montes/' : 'https://tienda.bodegalolamontes.com/rocky-wines/'} >VER TIENDA</VerTienda>
+            <VerTienda target="_blank" href={(bodega === 'Circus') ? 'https://tienda.bodegalolamontes.com/circus-wines/' : (bodega === 'Lola Montes') ? 'https://tienda.bodegalolamontes.com/lola-montes/' : 'https://tienda.bodegalolamontes.com/rocky-wines/'} >{t('Vinos.VerTienda')}</VerTienda>
         </Cuadrado>
     );
 }
  
-export default CuadradoVino;
+ 
+CuadradoVino.getInitialProps = async () => ({
+    namespacesRequired: ['vinos'],
+  });
+  
+  export default withTranslation('vinos')(CuadradoVino);

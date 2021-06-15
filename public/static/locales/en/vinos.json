@@ -1,0 +1,23 @@
+{
+    "Vinos": {
+        "Varietal": "Varietal",
+        "Linea": "Line",
+        "Todas": "All",
+        "Todos": "All",
+        "VerMas": "See more",
+        "VerTienda": "GO TO SHOP"
+    },
+    "UnVino": {
+        "ParaQuien": "FOR WHOM?",
+        "ConQue": "WITH WHAT?",
+        "QueMas": "WHAT ELSE?",
+        "VerTienda": "GO TO SHOP",
+        "Interesar": "You might also be interested in",
+        "Region": "VINEYARD REGION",
+        "Guarda": "GUARD",
+        "Color": "COLOR",
+        "Nariz": "NOSE",
+        "Paladar": "PALATE",
+        "Maridaje": "PAIRING"
+    }
+}

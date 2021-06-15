@@ -1,0 +1,17 @@
+{
+    "Header": {
+        "Inicio": "Inicio",
+        "Vinos": "Vinos",
+        "Contacto": "Contacto",
+        "Tienda": "Tienda",
+        "ES": "ESP",
+        "ENG": "ENG"
+    },
+    "Titulo": "Bienvenido al mundo",
+    "Subtitulo": "Elaboramos vinos con uvas seleccionadas de nuestros viñedos de Agrelo, Mendoza.",
+    "Cual": "¿Cuál vas a elegir hoy?",
+    "BtnConocer": {
+        "01": "Quiero conocer",
+        "02": "todos los vinos"
+    } 
+}

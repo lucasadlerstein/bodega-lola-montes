@@ -15,6 +15,7 @@ const Lista = styled.ul`
 `;
 
 const Footer = ({t}) => {
+
     return (
         <footer
             style={{backgroundColor: 'var(--colorGrisOscuro)', fontSize: '1.4rem'}}
@@ -76,8 +77,10 @@ const Footer = ({t}) => {
 }
  
  
-Footer.getInitialProps = async () => ({
-    namespacesRequired: ['common'],
-  });
+// Footer.getInitialProps = async () => ({
+//     namespacesRequired: ['common'],
+//   });
   
-  export default withTranslation('common')(Footer);
+export default withTranslation('common')(Footer);
+
+// export default Footer;

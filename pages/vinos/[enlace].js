@@ -320,11 +320,5 @@ const unVino = ({enlace, t}) => {
     }
 
 }
- 
-
- 
-// unVino.getInitialProps = async () => ({
-//     namespacesRequired: ['vinos'],
-//   });
   
 export default withTranslation('vinos')(unVino);

@@ -1,8 +1,19 @@
 const path = require('path');
+const { nextI18NextRewrites } = require('next-i18next/rewrites')
+
+const localeSubpaths = {
+    en: 'en'
+}
 
 module.exports = {
-    i18n: {
-      defaultLocale: 'es',
-      locales: ['es', 'en'],
-    },
-  };
+
+    rewrites: async () => nextI18NextRewrites(localeSubpaths),
+    publicRuntimeConfig: {
+        localeSubpaths,
+      },
+    shallowRender: true,
+    env: {
+        backendURL: 'https://api.baifff.tv',
+        frontendURL: 'http://localhost:3000',
+    }
+}

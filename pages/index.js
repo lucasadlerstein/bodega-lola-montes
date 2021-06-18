@@ -10,7 +10,8 @@ import Banner4 from '../components/vinos/Banner4';
 import Banner5 from '../components/vinos/Banner5';
 import { Container, Row, Col, Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem, NavbarText } from 'reactstrap';
 import { withTranslation, i18n } from '../i18n';
-
+// import { useTranslation } from 'next-i18next';
+// import { useRouter } from 'next/router'
 
 const Titulo = styled.h1`
   font-size: 4.5rem;
@@ -223,6 +224,7 @@ const Index = ({t}) => {
                     <BtnIdioma
                       onClick={() => i18n.changeLanguage(i18n.language === 'en' ? 'es' : 'en')}
                     >{i18n.language === 'en' ? 'ESP' : 'ENG'}</BtnIdioma>
+                    
                 </Idiomas>
             </Col>
         </Row>

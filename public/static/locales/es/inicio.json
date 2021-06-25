@@ -13,5 +13,11 @@
     "BtnConocer": {
         "01": "Quiero conocer",
         "02": "todos los vinos"
-    } 
+    },
+    "TextosBanner": {
+        "Todos": "",
+        "Lola": "Cotidiano y descontracturado. Ideal para cualquier encuentro.",
+        "Rocky": "Somos solo vino tinto con suelo y raíz al pie de la Cordillera de los Andes.",
+        "Circus": "Vinos complejos, de buena estructura y con un equilibrio perfecto entre el terroir y clima mendocino."
+    }
 }

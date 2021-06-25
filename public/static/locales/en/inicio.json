@@ -13,5 +13,11 @@
     "BtnConocer": {
         "01": "I want to know",
         "02": "all the wines"
-    } 
+    },
+    "TextosBanner": {
+        "Todos": "",
+        "Lola": "Everyday and relaxed. Ideal for any meeting.",
+        "Rocky": "We are only red wine with soil and roots at the foot of the Andes Mountains.",
+        "Circus": "Complex wines with a good structure and a perfect balance between the terroir and Mendoza climate."
+    }
 }

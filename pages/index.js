@@ -254,6 +254,17 @@ const Index = ({t}) => {
           // (bannerNumber == 5) ?  <Banner5 entrada={entrada} numero={bannerNumber} /> :
           null
         }
+
+        <p style={{fontFamily: 'GothamBook'}} className="animate__animated animate__fadeIn animate__delay-4-5s">
+          {
+            (bannerNumber == 1) ?  t('TextosBanner.Todos') : 
+            (bannerNumber == 2) ?  t('TextosBanner.Rocky') :
+            (bannerNumber == 3) ?  t('TextosBanner.Circus') :
+            (bannerNumber == 4) ?  t('TextosBanner.Lola') :
+            // (bannerNumber == 5) ?  <Banner5 entrada={entrada} numero={bannerNumber} /> :
+            null
+          }
+        </p>
         
         <Link href="/vinos">
           <QuieroConocer className="text-center animate__animated animate__faster animate__fadeInLeft animate__delay-4-5s">{t('BtnConocer.01')}<br/>{t('BtnConocer.02')}</QuieroConocer>

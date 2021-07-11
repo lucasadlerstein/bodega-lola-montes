@@ -11,6 +11,18 @@ const RowPer = styled(Row)`
     justify-content: center!important;
 `;
 
+const Franja = styled.div`
+    position: absolute;
+    content: '';
+    background-color: var(--colorAmarillo);
+    padding: 3rem 1rem;
+    text-transform: uppercase;
+    color: white;
+    z-index: 999;
+    top: 45%;
+    opacity: .9!important;
+`;
+
 const Banner3 = ({entrada, numero}) => {
 
     const Vinos = VinosLista.vinos;
@@ -20,8 +32,12 @@ const Banner3 = ({entrada, numero}) => {
     return (
         <>
             <Row
-                className="mb-5" style={{justifyContent: 'center'}}
+                className="mb-5" style={{justifyContent: 'center', position: 'relative'}}
             >
+                <Franja
+                    className={`animate__animated animate__faster ${(entrada === true) ? 'animate__fadeIn animate__delay-1-5s' : 'animate__fadeOut animate__delay-1-5s'}`}
+                >Cotidiano.<br/>Descontracturado. <br/>Ideal para cualquier encuentro.</Franja>
+
                 <Col xs={4} sm={4} lg={3} className="p-0">
                     <Link href="/vinos?linea=Circus">
                         <a>

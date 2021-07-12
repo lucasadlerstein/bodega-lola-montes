@@ -64,7 +64,7 @@ const Banner = ({entrada, numero}) => {
                 className="mb-5" style={{justifyContent: 'center', position: 'relative'}}            
             >
                 <Franja
-                    className={`animate__animated animate__faster ${(entrada === true) ? 'animate__fadeIn animate__delay-1-5s' : 'animate__fadeOut animate__delay-1-5s'}`}
+                    className={`animate__animated animate__faster ${(entrada === true) ? 'animate__fadeIn animate__delay-5s' : 'animate__fadeOut animate__delay-1-5s'}`}
                 >Cotidiano. Descontracturado.<br/>Ideal para cualquier encuentro.</Franja>
 
                 <VideoFondo

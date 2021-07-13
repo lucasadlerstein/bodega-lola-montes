@@ -22,6 +22,7 @@ const Franja = styled.div`
     color: white;
     z-index: 999;
     top: 45%;
+    transition: all .5s ease;
 `;
 
 
@@ -34,7 +35,7 @@ const Banner2 = ({entrada, numero}) => {
                 className="mb-5" style={{justifyContent: 'center', position: 'relative'}}
             >
                 <Franja
-                    className={`animate__animated animate__faster ${(entrada === true) ? 'animate__rollIn animate__delay-1-5s' : 'animate__rollOut animate__delay-1-5s'}`}
+                    className={`animate__animated animate__faster ${(entrada === true) ? 'animate__zoomIn animate__delay-1-5s' : 'animate__zoomOut animate__delay-1-5s'}`}
                 >Cotidiano. Descontracturado. Ideal para cualquier encuentro.</Franja>
                 <Col xs={4} sm={4} lg={3} className="p-0">
                     <Link href="/vinos?linea=Rocky">

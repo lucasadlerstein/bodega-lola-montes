@@ -19,6 +19,7 @@ const Franja = styled.div`
     transform: rotate(-15deg);
     z-index: 999;
     top: 45%;
+    transition: all .5s ease;
 `;
 
 
@@ -56,6 +57,7 @@ const Banner = ({entrada, numero}) => {
         transform: translateX(-50%) translateY(-50%);       */
         /* z-index: -100; */
         /* background-size: cover; */
+    transition: all .5s ease;
     `;
 
     return (

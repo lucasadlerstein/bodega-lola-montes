@@ -21,6 +21,7 @@ const Franja = styled.div`
     z-index: 999;
     top: 45%;
     opacity: .9!important;
+    transition: all .5s ease;
 `;
 
 const Banner3 = ({entrada, numero}) => {
@@ -35,7 +36,7 @@ const Banner3 = ({entrada, numero}) => {
                 className="mb-5" style={{justifyContent: 'center', position: 'relative'}}
             >
                 <Franja
-                    className={`animate__animated animate__faster ${(entrada === true) ? 'animate__fadeIn animate__delay-1-5s' : 'animate__fadeOut animate__delay-1-5s'}`}
+                    className={`animate__animated animate__faster ${(entrada === true) ? 'animate__zoomIn animate__delay-1-5s' : 'animate__zoomOut animate__delay-1-5s'}`}
                 >Cotidiano.<br/>Descontracturado. <br/>Ideal para cualquier encuentro.</Franja>
 
                 <Col xs={4} sm={4} lg={3} className="p-0">

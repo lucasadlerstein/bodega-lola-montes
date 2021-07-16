@@ -9,18 +9,7 @@ const RowPer = styled(Row)`
 `;
 
 
-const Franja = styled.div`
-    position: absolute;
-    content: '';
-    background-color: var(--colorAmarillo);
-    padding: 1rem 1.5rem;
-    text-transform: uppercase;
-    color: white;
-    transform: rotate(-15deg);
-    z-index: 999;
-    top: 45%;
-    transition: all .5s ease;
-`;
+
 
 
 const Banner = ({entrada, numero}) => {
@@ -65,9 +54,6 @@ const Banner = ({entrada, numero}) => {
             <Row
                 className="mb-5" style={{justifyContent: 'center', position: 'relative'}}            
             >
-                <Franja
-                    className={`animate__animated animate__faster ${(entrada === true) ? 'animate__fadeIn animate__delay-5s' : 'animate__fadeOut animate__delay-1-5s'}`}
-                >Cotidiano. Descontracturado.<br/>Ideal para cualquier encuentro.</Franja>
 
                 <VideoFondo
                     src={ancho <= 768 ? '/images/EmojiFelizCelular.mp4' : '/images/EmojiFelizParticulas.mp4'}

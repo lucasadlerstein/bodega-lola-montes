@@ -18,6 +18,21 @@
         "Todos": "",
         "Lola": "Cotidiano y descontracturado. Ideal para cualquier encuentro.",
         "Rocky": "Somos solo vino tinto con suelo y raíz al pie de la Cordillera de los Andes.",
-        "Circus": "Vinos complejos, de buena estructura y con un equilibrio perfecto entre el terroir y clima mendocino."
+        "Circus": "Vinos complejos, de buena estructura y con un equilibrio perfecto entre el terroir y clima mendocino.",
+
+
+        "LolaP": {
+            "Uno": "Cotidiano y descontracturado.",
+            "Dos": "Ideal para cualquier encuentro."
+        },
+        "RockyP": {
+            "Uno": "Somos solo vino tinto con suelo y raíz",
+            "Dos": "al pie de la Cordillera de los Andes."
+        },
+        "CircusP": {
+            "Uno": "Vinos complejos, de buena estructura",
+            "Dos": "y con un equilibrio perfecto",
+            "Tres": "entre el terroir y clima mendocino."
+        }
     }
 }

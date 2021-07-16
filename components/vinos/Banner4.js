@@ -5,13 +5,14 @@ import styled from '@emotion/styled';
 import {Row, Col, Container} from 'reactstrap';
 import VinosLista from '../../vinos-lista.json';
 import Link from 'next/link';
+import { withTranslation } from '../../i18n';
 
 const RowPer = styled(Row)`
     margin: 0 auto;
     justify-content: center!important;
 `;
 
-const Banner4 = ({entrada, numero}) => {
+const Banner4 = ({entrada, numero, t}) => {
 
     const Vinos = VinosLista.vinos;
     const [cont, setCont] = useState(0);
@@ -20,8 +21,10 @@ const Banner4 = ({entrada, numero}) => {
     return (
         <>
             <Row
-                className="mb-5" style={{justifyContent: 'center'}}
-            >
+                className="mb-5" style={{justifyContent: 'center', position: 'relative'}}
+                >
+                <div className={`franja animate__animated animate__faster ${(entrada === true) ? 'animate__fadeIn animate__delay-1-5s' : 'animate__fadeOut animate__delay-1-5s'}`}
+                    >{t('TextosBanner.LolaP.Uno')}<br/>{t('TextosBanner.LolaP.Dos')}</div>
                 <Col xs={4} sm={4} lg={3} className="p-0">
                     <Link href="/vinos?linea=Lola%20Montes">
                         <a>
@@ -50,4 +53,4 @@ const Banner4 = ({entrada, numero}) => {
     
 }
  
-export default Banner4;
+export default withTranslation('inicio')(Banner4);

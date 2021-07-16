@@ -5,26 +5,14 @@ import styled from '@emotion/styled';
 import {Row, Col, Container} from 'reactstrap';
 import VinosLista from '../../vinos-lista.json';
 import Link from 'next/link';
+import { withTranslation } from '../../i18n';
 
 const RowPer = styled(Row)`
     margin: 0 auto;
     justify-content: center!important;
 `;
 
-const Franja = styled.div`
-    position: absolute;
-    content: '';
-    background-color: var(--colorAmarillo);
-    padding: 3rem 1rem;
-    text-transform: uppercase;
-    color: white;
-    z-index: 999;
-    top: 45%;
-    opacity: .9!important;
-    transition: all .5s ease;
-`;
-
-const Banner3 = ({entrada, numero}) => {
+const Banner3 = ({entrada, numero, t}) => {
 
     const Vinos = VinosLista.vinos;
     const [cont, setCont] = useState(0);
@@ -35,10 +23,10 @@ const Banner3 = ({entrada, numero}) => {
             <Row
                 className="mb-5" style={{justifyContent: 'center', position: 'relative'}}
             >
-                <Franja
-                    className={`animate__animated animate__faster ${(entrada === true) ? 'animate__zoomIn animate__delay-1-5s' : 'animate__zoomOut animate__delay-1-5s'}`}
-                >Cotidiano.<br/>Descontracturado. <br/>Ideal para cualquier encuentro.</Franja>
 
+                <div className={`franja animate__animated animate__faster ${(entrada === true) ? 'animate__fadeIn animate__delay-1-5s' : 'animate__fadeOut animate__delay-1-5s'}`}
+                    >{t('TextosBanner.CircusP.Uno')}<br/>{t('TextosBanner.CircusP.Dos')}<br/>{t('TextosBanner.CircusP.Tres')}</div>
+                
                 <Col xs={4} sm={4} lg={3} className="p-0">
                     <Link href="/vinos?linea=Circus">
                         <a>
@@ -67,4 +55,4 @@ const Banner3 = ({entrada, numero}) => {
     
 }
  
-export default Banner3;
+export default withTranslation('inicio')(Banner3);

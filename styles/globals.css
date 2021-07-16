@@ -228,3 +228,29 @@ img {
   }
 }
 
+.franja {
+  position: absolute;
+  content: '';
+  background-color: var(--colorAmarillo);
+  padding: 1rem 1.5rem;
+  text-transform: uppercase;
+  color: white;
+  transform: rotate(-15deg);
+  z-index: 999;
+  top: 70%;
+  transition: all .5s ease;
+  max-width: 99%;
+}
+
+@media (max-width: 540px){
+  .franja {
+    transform: scale(0.7)!important;
+    font-size:1.4rem;
+  }
+}
+
+@media (max-width: 768px){
+  .franja {
+    transform: scale(0.9)!important;
+  }
+}

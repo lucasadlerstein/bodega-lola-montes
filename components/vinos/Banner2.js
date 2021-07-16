@@ -5,28 +5,14 @@ import styled from '@emotion/styled';
 import {Row, Col, Container} from 'reactstrap';
 import VinosLista from '../../vinos-lista.json';
 import Link from 'next/link';
+import { withTranslation } from '../../i18n';
 
 const RowPer = styled(Row)`
     margin: 0 auto;
     justify-content: center!important;
 `;
 
-const Franja = styled.div`
-    position: absolute;
-    content: '';
-    background-color: black;
-    padding: 1rem;
-    text-transform: uppercase;
-    transform: rotate(-15deg)!important;
-    border-radius: 3rem;
-    color: white;
-    z-index: 999;
-    top: 45%;
-    transition: all .5s ease;
-`;
-
-
-const Banner2 = ({entrada, numero}) => {
+const Banner2 = ({entrada, numero, t}) => {
 
 
     return (
@@ -34,9 +20,9 @@ const Banner2 = ({entrada, numero}) => {
             <Row
                 className="mb-5" style={{justifyContent: 'center', position: 'relative'}}
             >
-                <Franja
-                    className={`animate__animated animate__faster ${(entrada === true) ? 'animate__zoomIn animate__delay-1-5s' : 'animate__zoomOut animate__delay-1-5s'}`}
-                >Cotidiano. Descontracturado. Ideal para cualquier encuentro.</Franja>
+                <div className={`franja animate__animated animate__faster ${(entrada === true) ? 'animate__fadeIn animate__delay-1-5s' : 'animate__fadeOut animate__delay-1-5s'}`}
+                    >{t('TextosBanner.RockyP.Uno')}<br/>{t('TextosBanner.RockyP.Dos')}</div>
+
                 <Col xs={4} sm={4} lg={3} className="p-0">
                     <Link href="/vinos?linea=Rocky">
                         <a>
@@ -66,4 +52,4 @@ const Banner2 = ({entrada, numero}) => {
     
 }
  
-export default Banner2;
+export default withTranslation('inicio')(Banner2);

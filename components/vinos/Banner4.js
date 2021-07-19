@@ -23,7 +23,7 @@ const Banner4 = ({entrada, numero, t}) => {
             <Row
                 className="mb-5" style={{justifyContent: 'center', position: 'relative'}}
                 >
-                <div className={`franja animate__animated animate__faster ${(entrada === true) ? 'animate__fadeIn animate__delay-1-5s' : 'animate__fadeOut animate__delay-1-5s'}`}
+                <div className={`franja bg-amarillo top-lola animate__animated animate__faster ${(entrada === true) ? 'animate__fadeIn animate__delay-1-5s' : 'animate__fadeOut animate__delay-1-5s'}`}
                     >{t('TextosBanner.LolaP.Uno')}<br/>{t('TextosBanner.LolaP.Dos')}</div>
                 <Col xs={4} sm={4} lg={3} className="p-0">
                     <Link href="/vinos?linea=Lola%20Montes">

@@ -19,7 +19,7 @@ body {
   font-size: 1.6rem!important;
   text-align: center;
   font-family: 'Gotham', sans-serif;
-  overflow-x: hidden;
+  overflow-x: hidden!important;
 }
 
 *, *:before, *:after{
@@ -231,15 +231,35 @@ img {
 .franja {
   position: absolute;
   content: '';
-  background-color: var(--colorAmarillo);
+  /* background-color: var(--colorAmarillo); */
   padding: 1rem 1.5rem;
   text-transform: uppercase;
   color: white;
-  transform: rotate(-15deg);
+  transform: rotate(-5deg);
   z-index: 999;
-  top: 70%;
+  top: 65%;
   transition: all .5s ease;
   max-width: 99%;
+  transition: all .5s ease;
+}
+
+.franja:hover {
+  background-color: transparent!important;
+  color: transparent!important;
+  cursor: default;
+}
+
+.bg-azul {
+  background-color: var(--colorAzul)!important;
+}
+.bg-amarillo {
+  background-color: var(--colorAmarillo)!important;
+}
+.bg-chicle {
+  background-color: var(--colorChicle)!important;
+}
+.top-lola {
+  top: 70%!important;
 }
 
 @media (max-width: 540px){

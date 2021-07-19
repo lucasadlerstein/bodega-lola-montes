@@ -18,6 +18,21 @@
         "Todos": "",
         "Lola": "Everyday and relaxed. Ideal for any meeting.",
         "Rocky": "We are only red wine with soil and roots at the foot of the Andes Mountains.",
-        "Circus": "Complex wines with a good structure and a perfect balance between the terroir and Mendoza climate."
+        "Circus": "Complex wines with a good structure and a perfect balance between the terroir and Mendoza climate.",
+
+
+        "LolaP": {
+            "Uno": "Everyday and relaxed.",
+            "Dos": "Ideal for any meeting."
+        },
+        "RockyP": {
+            "Uno": "We are only red wine with soil and roots",
+            "Dos": "at the foot of the Andes Mountains."
+        },
+        "CircusP": {
+            "Uno": "Complex wines with a good structure",
+            "Dos": "and a perfect balance between",
+            "Tres": "the terroir and Mendoza climate."
+        }
     }
 }

@@ -24,8 +24,8 @@ const Banner3 = ({entrada, numero, t}) => {
                 className="mb-5" style={{justifyContent: 'center', position: 'relative'}}
             >
 
-                <div className={`franja bg-azul animate__animated animate__faster ${(entrada === true) ? 'animate__fadeIn animate__delay-1-5s' : 'animate__fadeOut animate__delay-1-5s'}`}
-                    >{t('TextosBanner.CircusP.Uno')}<br/>{t('TextosBanner.CircusP.Dos')}<br/>{t('TextosBanner.CircusP.Tres')}</div>
+                {/* <div className={`franja bg-azul animate__animated animate__faster ${(entrada === true) ? 'animate__fadeIn animate__delay-1-5s' : 'animate__fadeOut animate__delay-1-5s'}`} */}
+                    {/* >{t('TextosBanner.CircusP.Uno')}<br/>{t('TextosBanner.CircusP.Dos')}<br/>{t('TextosBanner.CircusP.Tres')}</div> */}
                 
                 <Col xs={4} sm={4} lg={3} className="p-0">
                     <Link href="/vinos?linea=Circus">

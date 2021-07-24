@@ -148,6 +148,15 @@ const BtnDerecha = styled(BtnArrow)`
   }
 `;
 
+const InfoFranja = styled.p`
+  margin-bottom: 0!important;
+  b {
+    font-size: 2rem;
+    margin-bottom: 1rem!important;
+    font-weight: bold!important;
+  }
+`;
+
 const Index = ({t}) => {
 
   const [isOpen, setIsOpen] = useState(false);
@@ -155,34 +164,36 @@ const Index = ({t}) => {
   const [mostrarBanner, setMostrarBanner] = useState(true);
   const [entrada, setEntrada] = useState(true);
 
-  const cambiarBanner = (cual) => {
-    // setEntrada(false);
-    let randomN = bannerNumber;
-    
-    while(randomN === bannerNumber || randomN === 1) {
-      randomN = Math.floor(Math.random() * (4)) + 1;
-    }
-  
-    setBannerNumber(randomN);
-  
+  const FranjaAbajo = styled.div`
+    background-color: ${bannerNumber === 1 ? 'transparent' : (bannerNumber === 3) ? 'var(--colorAzul)' : (bannerNumber === 2) ? 'var(--colorAmarillo);' : 'var(--colorChicle);'};
+    color: ${bannerNumber === 3 ? 'white' : (bannerNumber === 2) ? 'black' : 'black'};
+    text-align: center;
+    padding: 3rem 0 3rem 0;
+    transition: all .5s ease;
+    visibility: ${bannerNumber === 1 ? 'hidden' : 'block'};
+  `;
 
-    // setTimeout(() => {
-    //   setEntrada(true);
-    //   setBannerNumber(randomN);
-    //   // if(cual === 'atras') {
-    //   //   if(bannerNumber === 0) {
-    //   //     setBannerNumber(4);
-    //   //   } else {
-    //   //     setBannerNumber(bannerNumber - 1);
-    //   //   }
-    //   // } else {
-    //   //   if(bannerNumber === 4) {
-    //   //     setBannerNumber(0);
-    //   //   } else {
-    //   //     setBannerNumber(bannerNumber + 1);
-    //   //   }
-    //   // }
-    // }, 2000);
+  const cambiarBanner = (cual) => {
+
+    if(bannerNumber === 4 && cual === 'adelante') {
+      setBannerNumber(2);
+    } else if (bannerNumber === 2 && cual === 'atras') {
+      setBannerNumber(4);
+    } else if (cual === 'atras') {
+      setBannerNumber(bannerNumber - 1);
+    } else if (cual === 'adelante') {
+      setBannerNumber(bannerNumber + 1);
+    }
+
+
+    // RANDOM
+
+    // // setEntrada(false);
+    // let randomN = bannerNumber;
+    // while(randomN === bannerNumber || randomN === 1) {
+      // randomN = Math.floor(Math.random() * (4)) + 1;
+    // }
+    // setBannerNumber(randomN);
   }
 
   const toggle = () => setIsOpen(!isOpen);
@@ -249,9 +260,9 @@ const Index = ({t}) => {
 
         {
           (bannerNumber == 1) ?  <Banner entrada={entrada} numero={bannerNumber} /> : 
-          (bannerNumber == 2) ?  <Banner2 entrada={entrada} numero={bannerNumber} /> :
+          (bannerNumber == 2) ?  <Banner4 entrada={entrada} numero={bannerNumber} /> :
           (bannerNumber == 3) ?  <Banner3 entrada={entrada} numero={bannerNumber} /> :
-          (bannerNumber == 4) ?  <Banner4 entrada={entrada} numero={bannerNumber} /> :
+          (bannerNumber == 4) ?  <Banner2 entrada={entrada} numero={bannerNumber} /> :
           // (bannerNumber == 5) ?  <Banner5 entrada={entrada} numero={bannerNumber} /> :
           null
         }
@@ -272,6 +283,17 @@ const Index = ({t}) => {
         </Link>
 
       </Container>
+      <FranjaAbajo>
+        {
+          (bannerNumber === 2) ? (
+            <InfoFranja><b className="mb-5">LOLA MONTES</b> <br /> {t('TextosBanner.LolaP.Uno')} <br /> {t('TextosBanner.LolaP.Dos')}  </InfoFranja>
+          ) : (bannerNumber === 3) ? (
+            <InfoFranja> <b className="mb-5">CIRCUS</b> <br /> {t('TextosBanner.CircusP.Uno')} <br /> {t('TextosBanner.CircusP.Dos')} <br /> {t('TextosBanner.CircusP.Tres')} </InfoFranja>
+          ) : (bannerNumber === 4) ? (
+            <InfoFranja> <b className="mb-5">ROCKY</b> <br /> {t('TextosBanner.RockyP.Uno')} <br /> {t('TextosBanner.RockyP.Dos')}</InfoFranja>
+          ) : null
+        }
+      </FranjaAbajo>
       <Footer />
     </>
   );

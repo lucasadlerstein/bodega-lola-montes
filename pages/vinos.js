@@ -73,9 +73,9 @@ const Vinos = ({t}) => {
     return (
         <>
             <Head>
-                <title>Vinos | Lola Montes</title>
-                <meta name="description" content="" />
-                <meta name="keywords" content="" />
+                <title>Bodega Lola Montes - Vinos por Línea o Varietal</title>
+                <meta name="description" content="Conozca nuestros vinos seleccionados buscando por varietal o línea." />
+                <meta name="keywords" content="Vinos, Vino, Lola Montes, Viñedo, Vino Tinto, Vino Blanco, Bodega, Mendoza, Rocky, Lola, Circus, Malbec, Blend, Uva, Uvas, Viñedos, Cabernet, Cabernet Sauvignon, Syrah, Red Blend, Chardonnay, Sauvignon Blanc, White Blend, Rosé, Extra Brut, Champaña, Champagne" />
             </Head>
             <Layout>
                 <main

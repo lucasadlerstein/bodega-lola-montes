@@ -175,7 +175,7 @@ const unVino = ({enlace, t}) => {
                 <title>{vinoInfo.uno} {vinoInfo.dos} - {vinoInfo.varietal} | Bodega Lola Montes</title>
                 <meta name="description" content={ vinoInfo.uno === 'Circus' ? vinoInfo.resena_es.substring(0, 160) : vinoInfo.como_es.substring(0, 150) } />
 
-                <meta name="keywords" content={`${vinoInfo.uno}, ${vinoInfo.dos}, ${vinoInfo.varietal}, lola montes, ${vinoInfo.region_es}`} />
+                <meta name="keywords" content={vinoInfo.keyword} />
             </Head>
             <Layout>
                 <Fondo>

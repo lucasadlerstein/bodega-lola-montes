@@ -201,9 +201,9 @@ const Index = ({t}) => {
   return (
     <>
       <Head>
-        <title>Lola Montes</title>
-        <meta name="description" content="" />
-        <meta name="keywords" content="" />
+        <title>Bodega Lola Montes - Vinos con uvas seleccionadas</title>
+        <meta name="description" content="Elaboramos nuestros vinos con uvas seleccionadas de nuestros viñedos de Agrelo, Mendoza." />
+        <meta name="keywords" content="Vinos, Vino, Lola Montes, Viñedo, Vino Tinto, Vino Blanco, Bodega, Mendoza, Rocky, Lola, Circus, Malbec, Blend, Uva, Uvas, Viñedos, Cabernet, Cabernet Sauvignon, Syrah, Red Blend, Chardonnay, Sauvignon Blanc, White Blend, Rosé, Extra Brut, Champaña, Champagne" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
       </Head>
       <Container className="mb-5">

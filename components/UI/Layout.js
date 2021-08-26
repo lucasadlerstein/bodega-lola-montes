@@ -19,8 +19,9 @@ const Layout = ({children}) => {
                 {/* <meta property="og:image" content="" /> */}
                 {/* <meta property="og:url" content="" /> */}
                 {/* <meta property="og:site_name" content="" /> */}
-                <link href="//d3ugyf2ht6aenh.cloudfront.net/stores/001/554/144/themes/common/logo-1198197463-1613652139-fdab2347d9aa5e6a73b5fe21d31b37e11613652139.ico?0" rel="icon" type="image/x-icon" />
-                <link href="//d3ugyf2ht6aenh.cloudfront.net/stores/001/554/144/themes/common/logo-1198197463-1613652139-fdab2347d9aa5e6a73b5fe21d31b37e11613652139.ico?0" rel="shortcut icon" type="image/x-icon" />
+                <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+                <link rel="icon" href="/images/favicon.ico" type="image/x-icon"/>
+
 
                 <link
                     rel="preload"

@@ -172,7 +172,7 @@ const unVino = ({enlace, t}) => {
         return (
             <>
             <Head>
-                <title>{vinoInfo.uno} {vinoInfo.dos} - {vinoInfo.varietal} | Bodega Lola Montes</title>
+                <title>{vinoInfo.uno} {vinoInfo.dos} - {vinoInfo.varietal} | Lola Montes</title>
                 <meta name="description" content={ vinoInfo.uno === 'Circus' ? vinoInfo.resena_es.substring(0, 160) : vinoInfo.como_es.substring(0, 150) } />
 
                 <meta name="keywords" content={vinoInfo.keyword} />

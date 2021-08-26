@@ -201,10 +201,13 @@ const Index = ({t}) => {
   return (
     <>
       <Head>
-        <title>Bodega Lola Montes - Vinos con uvas seleccionadas</title>
-        <meta name="description" content="Elaboramos nuestros vinos con uvas seleccionadas de nuestros viñedos de Agrelo, Mendoza." />
-        <meta name="keywords" content="Vinos, Vino, Lola Montes, Viñedo, Vino Tinto, Vino Blanco, Bodega, Mendoza, Rocky, Lola, Circus, Malbec, Blend, Uva, Uvas, Viñedos, Cabernet, Cabernet Sauvignon, Syrah, Red Blend, Chardonnay, Sauvignon Blanc, White Blend, Rosé, Extra Brut, Champaña, Champagne" />
+        <title>{t('SEO.Titulo')}</title>
+        <meta name="description" content={t('SEO.Descripcion')} />
+        <meta name="keywords" content={t('SEO.Keywords')} />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+        <link rel="icon" href="/images/favicon.ico" type="image/x-icon"/>
+
       </Head>
       <Container className="mb-5">
         <Row
@@ -240,7 +243,8 @@ const Index = ({t}) => {
                 </Idiomas>
             </Col>
         </Row>
-        <Titulo className="animate__animated animate__fadeIn">{t('Titulo')}<br/>Lola Montes</Titulo>
+        <Titulo className="animate__animated animate__fadeIn">{t('Titulo')}<br/>
+        {i18n.language === 'en' ? 'of ' : ''} Lola Montes</Titulo>
         <p style={{fontFamily: 'GothamBook'}} className="animate__animated animate__fadeIn animate__delay-0-5s">{t('Subtitulo')}</p>
         <Cual className="animate__animated animate__fadeIn animate__delay-1s mb-0">{t('Cual')}</Cual>
 

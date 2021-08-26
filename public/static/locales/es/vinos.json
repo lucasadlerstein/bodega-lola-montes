@@ -19,5 +19,10 @@
         "Nariz": "NARIZ",
         "Paladar": "PALADAR",
         "Maridaje": "MARIDAJE"
+    },
+    "SEO": {
+        "Titulo": "Bodega Lola Montes - Vinos por Línea o Varietal",
+        "Descripcion": "Conozca nuestros vinos seleccionados buscando por varietal o línea.",
+        "Keywords": "Vinos, Vino, Lola Montes, Viñedo, Vino Tinto, Vino Blanco, Bodega, Mendoza, Rocky, Lola, Circus, Malbec, Blend, Uva, Uvas, Viñedos, Cabernet, Cabernet Sauvignon, Syrah, Red Blend, Chardonnay, Sauvignon Blanc, White Blend, Rosé, Extra Brut, Champaña, Champagne"
     }
 }

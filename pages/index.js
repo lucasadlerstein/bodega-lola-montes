@@ -205,8 +205,8 @@ const Index = ({t}) => {
         <meta name="description" content={t('SEO.Descripcion')} />
         <meta name="keywords" content={t('SEO.Keywords')} />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-        <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
-        <link rel="icon" href="/images/favicon.ico" type="image/x-icon"/>
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon"/>
 
       </Head>
       <Container className="mb-5">
@@ -249,16 +249,16 @@ const Index = ({t}) => {
         <Cual className="animate__animated animate__fadeIn animate__delay-1s mb-0">{t('Cual')}</Cual>
 
         <IconosAnimados className="animate__animated animate__fadeIn animate__delay-3s">
-          <IconoIzquierda className="animate__animated animate__fadeIn animate__delay-3s" src="/images/animaciones/Animación-HOME.gif" alt="Bodega Lola Montes" />
-          {/* <IconoDerecha className="animate__animated animate__fadeIn animate__delay-3s" src="/images/animaciones/Animación-HOME-CINTA.gif" alt="Be Kind, Drink Wine" /> */}
+          <IconoIzquierda className="animate__animated animate__fadeIn animate__delay-3s" src="images/animaciones/Animación-HOME.gif" alt="Bodega Lola Montes" />
+          {/* <IconoDerecha className="animate__animated animate__fadeIn animate__delay-3s" src="images/animaciones/Animación-HOME-CINTA.gif" alt="Be Kind, Drink Wine" /> */}
         </IconosAnimados>
 
         <div style={{position: 'relative', zIndex: '999'}} className="animate__animated animate__fadeIn animate__delay-3-5s">
           <BtnIzquierda onClick={() => cambiarBanner('atras')} className="animate__animated">
-            <img src="/images/arrow_izq.png" alt="Retroceder" />
+            <img src="images/arrow_izq.png" alt="Retroceder" />
           </BtnIzquierda>
           <BtnDerecha onClick={() => cambiarBanner('adelante')} className="animate__animated">
-            <img src="/images/arrow_der.png" alt="Retroceder" />
+            <img src="images/arrow_der.png" alt="Retroceder" />
           </BtnDerecha>
         </div>
 

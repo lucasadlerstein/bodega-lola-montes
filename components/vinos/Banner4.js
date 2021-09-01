@@ -26,23 +26,23 @@ const Banner4 = ({entrada, numero, t}) => {
                 {/* <div className={`franja bg-amarillo top-lola animate__animated animate__faster ${(entrada === true) ? 'animate__fadeIn animate__delay-1-5s' : 'animate__fadeOut animate__delay-1-5s'}`} */}
                     {/* >{t('TextosBanner.LolaP.Uno')}<br/>{t('TextosBanner.LolaP.Dos')}</div> */}
                 <Col xs={4} sm={4} lg={3} className="p-0">
-                    <Link href="/vinos?linea=Lola%20Montes">
+                    <Link href="vinos?linea=Lola%20Montes">
                         <a>
-                            <img style={{width: '95%'}} className={`img_banner_vino_1 animate__animated animate__faster ${(entrada === true) ? 'animate__fadeInUpBig animate__delay-0s' : 'animate__fadeOutUpBig animate__delay-0-5s'}`} src={`/images/vinos/Lola/lola_cabernet.png`} alt="Lola Montes - Cabernet Sauvingnon" />
+                            <img style={{width: '95%'}} className={`img_banner_vino_1 animate__animated animate__faster ${(entrada === true) ? 'animate__fadeInUpBig animate__delay-0s' : 'animate__fadeOutUpBig animate__delay-0-5s'}`} src={`images/vinos/Lola/lola_cabernet.png`} alt="Lola Montes - Cabernet Sauvingnon" />
                         </a>
                     </Link>
                 </Col>
                 <Col xs={4} sm={4} lg={3} className="p-0">
                     <Link href="/vinos?linea=Lola%20Montes">
                         <a>
-                            <img style={{width: '95%'}} className={`img_banner_vino_2 animate__animated animate__faster ${(entrada === true) ? 'animate__fadeInUpBig animate__delay-0-5s' : 'animate__fadeOutUpBig animate__delay-1s'}`} src={`/images/vinos/Lola/lola_malbec.png`} alt="Lola Montes - Malbec" />
+                            <img style={{width: '95%'}} className={`img_banner_vino_2 animate__animated animate__faster ${(entrada === true) ? 'animate__fadeInUpBig animate__delay-0-5s' : 'animate__fadeOutUpBig animate__delay-1s'}`} src={`images/vinos/Lola/lola_malbec.png`} alt="Lola Montes - Malbec" />
                         </a>
                     </Link>
                 </Col>
                 <Col xs={4} sm={4} lg={3} className="p-0">
                     <Link href="/vinos?linea=Lola%20Montes">
                         <a>
-                            <img style={{width: '95%'}} className={`img_banner_vino_3 animate__animated animate__faster ${(entrada === true) ? 'animate__fadeInUpBig animate__delay-1s' : 'animate__fadeOutUpBig animate__delay-1-5s'}`} src={`/images/vinos/Lola/lola_red_blend.png`} alt="Lola Montes - Red Blend" />
+                            <img style={{width: '95%'}} className={`img_banner_vino_3 animate__animated animate__faster ${(entrada === true) ? 'animate__fadeInUpBig animate__delay-1s' : 'animate__fadeOutUpBig animate__delay-1-5s'}`} src={`images/vinos/Lola/lola_red_blend.png`} alt="Lola Montes - Red Blend" />
                         </a>
                     </Link>
                 </Col>

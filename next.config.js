@@ -6,14 +6,16 @@ const localeSubpaths = {
 }
 
 module.exports = {
-
     rewrites: async () => nextI18NextRewrites(localeSubpaths),
     publicRuntimeConfig: {
         localeSubpaths,
       },
     shallowRender: true,
+    // reactStrictMode: false,
+    // reactStrictMode: true,
+    // trailingSlash: true,
+    assetPrefix: './',
     env: {
-        backendURL: 'https://api.baifff.tv',
         frontendURL: 'http://localhost:3000',
-    }
+    } 
 }

@@ -30,21 +30,21 @@ const Banner3 = ({entrada, numero, t}) => {
                 <Col xs={4} sm={4} lg={3} className="p-0">
                     <Link href="/vinos?linea=Circus">
                         <a>
-                            <img style={{width: '95%'}} className={`img_banner_vino_1 animate__animated animate__faster ${(entrada === true) ? 'animate__backInRight animate__delay-0s' : 'animate__backOutLeft animate__delay-0-5s'}`} src={`/images/vinos/Circus/Roble/circus_roble_cabernet_sauvignon.png`} alt="Circus Roble - Cabernet Sauvingnon" />
+                            <img style={{width: '95%'}} className={`img_banner_vino_1 animate__animated animate__faster ${(entrada === true) ? 'animate__backInRight animate__delay-0s' : 'animate__backOutLeft animate__delay-0-5s'}`} src={`images/vinos/Circus/Roble/circus_roble_cabernet_sauvignon.png`} alt="Circus Roble - Cabernet Sauvingnon" />
                         </a>
                     </Link>
                 </Col>
                 <Col xs={4} sm={4} lg={3} className="p-0">
                     <Link href="/vinos?linea=Circus">
                         <a>
-                            <img style={{width: '95%'}} className={`img_banner_vino_2 animate__animated animate__faster ${(entrada === true) ? 'animate__backInRight animate__delay-0-5s' : 'animate__backOutLeft animate__delay-1s'}`} src={`/images/vinos/Circus/Roble/circus_roble_malbec.png`} alt="Circus Roble - Malbec" />
+                            <img style={{width: '95%'}} className={`img_banner_vino_2 animate__animated animate__faster ${(entrada === true) ? 'animate__backInRight animate__delay-0-5s' : 'animate__backOutLeft animate__delay-1s'}`} src={`images/vinos/Circus/Roble/circus_roble_malbec.png`} alt="Circus Roble - Malbec" />
                         </a>
                     </Link>
                 </Col>
                 <Col xs={4} sm={4} lg={3} className="p-0">
                     <Link href="/vinos?linea=Circus">
                         <a>
-                            <img style={{width: '95%'}} className={`img_banner_vino_3 animate__animated animate__faster ${(entrada === true) ? 'animate__backInRight animate__delay-1s' : 'animate__backOutLeft animate__delay-1-5s'}`} src={`/images/vinos/Circus/Roble/circus_roble_chardonnay.png`} alt="Circus Roble - Chardonnay" />
+                            <img style={{width: '95%'}} className={`img_banner_vino_3 animate__animated animate__faster ${(entrada === true) ? 'animate__backInRight animate__delay-1s' : 'animate__backOutLeft animate__delay-1-5s'}`} src={`images/vinos/Circus/Roble/circus_roble_chardonnay.png`} alt="Circus Roble - Chardonnay" />
                         </a>
                     </Link>
                 </Col>

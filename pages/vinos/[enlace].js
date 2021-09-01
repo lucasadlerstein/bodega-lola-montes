@@ -281,7 +281,7 @@ const unVino = ({enlace, t}) => {
                             </Col>
                             <Col md={4} lg={5} className="text-center position-relative">
                                 {/* <Estampilla className="animate__animated animate__fadeIn animate__delay-4s"
-                                src={`/images/animaciones/${vinoInfo.uno === 'Circus' ? 'Animación-CIRCUS-quick-time' : vinoInfo.uno === 'Lola Montes' ? 'Animación-LM' : 'Animación-ROCKY'}.gif`}
+                                src={`images/animaciones/${vinoInfo.uno === 'Circus' ? 'Animación-CIRCUS-quick-time' : vinoInfo.uno === 'Lola Montes' ? 'Animación-LM' : 'Animación-ROCKY'}.gif`}
                                 alt={`${vinoInfo.uno} ${vinoInfo.dos}`} /> */}
                                 <ImagenVino className="animate__animated animate__fadeInRight animate__delay-1s" src={`/images/vinos/${vinoInfo.imagen}`} alt={`${vinoInfo.uno} ${vinoInfo.dos} - ${vinoInfo.varietal}`} />
                             </Col>

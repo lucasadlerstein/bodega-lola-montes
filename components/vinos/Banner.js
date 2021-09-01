@@ -56,7 +56,7 @@ const Banner = ({entrada, numero}) => {
             >
 
                 <VideoFondo
-                    src={ancho <= 768 ? '/images/EmojiFelizCelular.mp4' : '/images/EmojiFelizParticulas.mp4'}
+                    src={ancho <= 768 ? 'images/EmojiFelizCelular.mp4' : 'images/EmojiFelizParticulas.mp4'}
                     type="video/mp4"
                     autoPlay
                     loop
@@ -67,21 +67,21 @@ const Banner = ({entrada, numero}) => {
                 <Col xs={4} sm={4} lg={3} className="p-0">
                     <Link href="/vinos?linea=Rocky">
                         <a>
-                            <img style={{width: '95%'}} className={`img_banner_vino_1 animate__animated animate__faster ${(entrada === true) ? 'animate__fadeInLeftBig animate__delay-1-5s' : 'animate__fadeOutRightBig animate__delay-0-5s'}`} src={`/images/vinos/Rocky/rocky_malbec.png`} alt="Rocky - Malbec" />
+                            <img style={{width: '95%'}} className={`img_banner_vino_1 animate__animated animate__faster ${(entrada === true) ? 'animate__fadeInLeftBig animate__delay-1-5s' : 'animate__fadeOutRightBig animate__delay-0-5s'}`} src={`images/vinos/Rocky/rocky_malbec.png`} alt="Rocky - Malbec" />
                         </a>
                     </Link>
                 </Col>
                 <Col xs={4} sm={4} lg={3} className="p-0">
                     <Link href="/vinos?linea=Lola%20Montes">
                         <a>
-                            <img style={{width: '95%'}} className={`img_banner_vino_2 animate__animated animate__faster ${(entrada === true) ?'animate__fadeInLeftBig animate__delay-2s' : 'animate__fadeOutRightBig animate__delay-1s'}`} src={`/images/vinos/Lola/lola_malbec.png`} alt="Lola Montes - Malbec" />
+                            <img style={{width: '95%'}} className={`img_banner_vino_2 animate__animated animate__faster ${(entrada === true) ?'animate__fadeInLeftBig animate__delay-2s' : 'animate__fadeOutRightBig animate__delay-1s'}`} src={`images/vinos/Lola/lola_malbec.png`} alt="Lola Montes - Malbec" />
                         </a>
                     </Link>
                 </Col>
                 <Col xs={4} sm={4} lg={3} className="p-0">
                     <Link href="/vinos?linea=Circus">
                         <a>
-                            <img style={{width: '95%'}} className={`img_banner_vino_3 animate__animated animate__faster ${(entrada === true) ? 'animate__fadeInLeftBig animate__delay-2-5s' : 'animate__fadeOutRightBig animate__delay-1-5s'}`} src={`/images/vinos/Circus/Roble/circus_roble_malbec.png`} alt="Circus Roble - Malbec" />
+                            <img style={{width: '95%'}} className={`img_banner_vino_3 animate__animated animate__faster ${(entrada === true) ? 'animate__fadeInLeftBig animate__delay-2-5s' : 'animate__fadeOutRightBig animate__delay-1-5s'}`} src={`images/vinos/Circus/Roble/circus_roble_malbec.png`} alt="Circus Roble - Malbec" />
 
                         </a>
                     </Link>

@@ -40,11 +40,11 @@ const Footer = ({t}) => {
                     </Col>
                     <Col xs={6} sm={6} md={2} lg={2}>
                         <Lista>
-                            <li><Link href="/vinos"><a href="#" target="_blank">{t('Footer.Bodega')}</a></Link></li>
-                            <li><Link href="/vinos?linea=Lola%20Montes"><a href="#" target="_blank">Lola Montes</a></Link></li>
+                            <li><Link href="/vinos"><a target="_blank">{t('Footer.Bodega')}</a></Link></li>
+                            <li><Link href="/vinos?linea=Lola%20Montes"><a target="_blank">Lola Montes</a></Link></li>
                             <li><Link href="/vinos?linea=Rocky"><a target="_blank">Rocky Just Red</a></Link></li>
-                            <li><Link href="/vinos?linea=Circus"><a href="#" target="_blank">Circus Roble</a></Link></li>
-                            <li><Link href="/vinos?linea=Circus"><a href="#" target="_blank">Circus Classic</a></Link></li>
+                            <li><Link href="/vinos?linea=Circus"><a target="_blank">Circus Roble</a></Link></li>
+                            <li><Link href="/vinos?linea=Circus"><a target="_blank">Circus Classic</a></Link></li>
                             <li><a href="https://drive.google.com/drive/u/0/folders/1sQIOrLH3XsfTlqI43bEUQuM_fdSet6hY" target="_blank">{t('Footer.Recursos')}</a></li>
                         </Lista>
                     </Col>

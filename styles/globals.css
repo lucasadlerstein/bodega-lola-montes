@@ -29,6 +29,7 @@ body {
 a, a:hover {
   text-decoration: none;
   color: white;
+  cursor: pointer;
 }
 
 img {

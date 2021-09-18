@@ -14,7 +14,7 @@ module.exports = {
     // reactStrictMode: false,
     // reactStrictMode: true,
     // trailingSlash: true,
-    // assetPrefix: './',
+    assetPrefix: './',
     env: {
         frontendURL: 'http://localhost:3000',
     } 

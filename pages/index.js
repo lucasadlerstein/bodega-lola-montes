@@ -219,7 +219,9 @@ const Index = ({t}) => {
                     <Collapse isOpen={isOpen} navbar>
                         <Nav className={`ml-auto ${isOpen ? 'borde-menu' : ''}`} navbar>
                             <NavItem>
-                                <NavLink style={{color: 'black'}} className="nav-link-inicio" href="/vinos">{t('Header.Vinos')}</NavLink>
+                                <Link href="/vinos">
+                                  <NavLink style={{color: 'black'}} className="nav-link-inicio">{t('Header.Vinos')}</NavLink>
+                                </Link>
                             </NavItem>
                             <NavItem>
                                 <NavLink style={{color: 'black'}} className="nav-link-inicio" target="_blank" href="https://tienda.bodegalolamontes.com/contacto">{t('Header.Contacto')}</NavLink>

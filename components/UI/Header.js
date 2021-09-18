@@ -58,10 +58,14 @@ const Header = ({t}) => {
                     <Collapse isOpen={isOpen} navbar>
                         <Nav className="ml-auto" navbar>
                             <NavItem>
-                                <NavLink className="text-white" href="/">{t('Header.Inicio')}</NavLink>
+                                <Link href="/">
+                                    <NavLink className="text-white">{t('Header.Inicio')}</NavLink>
+                                </Link>    
                             </NavItem>
                             <NavItem>
-                                <NavLink className="text-white" href="/vinos">{t('Header.Vinos')}</NavLink>
+                                <Link href="/vinos">
+                                    <NavLink className="text-white">{t('Header.Vinos')}</NavLink>
+                                </Link>
                             </NavItem>
                             <NavItem>
                                 <NavLink className="text-white" target="_blank" href="https://drive.google.com/drive/u/0/folders/1sQIOrLH3XsfTlqI43bEUQuM_fdSet6hY">{t('Header.Presskit')}</NavLink>

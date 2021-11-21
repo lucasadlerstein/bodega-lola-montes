@@ -342,6 +342,31 @@
             "paladar_en": "It features a broad and intense attack, a firm and medium-bodied mid-palate, and juicy tannins. Long finish with a spicy aftertaste.",
             "maridaje_en": "Grilled red meats, braced pork, stuffed pasta, and hard cheeses."
         },
+        {
+            
+            "keyword": "Vinos, Vino, Lola Montes, Viñedo, Vino Tinto, Vino Blanco, Bodega, Mendoza, Rocky, Lola, Circus, Malbec, Blend, Uva, Uvas, Viñedos, Cabernet, Cabernet Sauvignon, Syrah, Red Blend, Chardonnay, Sauvignon Blanc, White Blend, Rosé, Extra Brut",
+            "uno": "Circus",
+            "dos": "Dulce",
+            "dos_eng": "Sweet",
+            "varietal": "50% Chenin | 50% Chardonnay",
+            "imagen": "Circus/DulceTerroir/circus_dulce_terroir.png",
+            "slug": "circus-dulce-terroir",
+            "resena_es": "Circus Dulce Terroir es un vino dulce, expresivo con buen caudal frutal y paladar refrescante que propone un sabor equilibrado entre el dulzor y la frescura. Es ideal para la hora del aperitivo y excelente compañero para diversas comidas.",
+            "region_es": "Agrelo, Mendoza, Argentina.",
+            "guarda_es": "2 años.",
+            "color_es": "Amarillo pálido con reflejos verdosos.",
+            "nariz_es": "Aromática tropical con dejos de ananá fresco y cítricos como pomelo y lima además de dejos florales.",
+            "paladar_es": "Es refrescante con acidez marcada en equilibrio con su elegante dulzor. Fácil de beber, ligero con final largo frutal.",
+            "maridaje_es": "Por su frescura y dulzor es un blanco muy acertado para acompañar carnes blancas, frituras, frutos de mar, pescados, sushi y ensaladas.",
+
+            "resena_en": "Circus Sweet Terroir is a sweet, expressive wine with good fruit flow and a refreshing palate that offers a balanced taste between sweetness and freshness. It is ideal for aperitif time and an excellent companion for various meals.",
+            "region_en": "Agrelo, Mendoza, Argentina.",
+            "guarda_en": "2 years.",
+            "color_en": "Pale yellow with greenish reflections.",
+            "nariz_en": "Tropical aroma with hints of fresh pineapple and citrus fruits such as grapefruit and lime in addition to floral traces.",
+            "paladar_en": "It is refreshing with marked acidity balanced with its elegant sweetness. Easy to drink, light with a long fruity finish.",
+            "maridaje_en": "Due to its freshness and sweetness it is a very suitable white wine to accompany white meats, fried food, seafood, fish, sushi and salads."
+        },
 
         
 
@@ -350,8 +375,8 @@
             
             "keyword": "Vinos, Vino, Lola Montes, Viñedo, Vino Tinto, Vino Blanco, Bodega, Mendoza, Rocky, Lola, Circus, Malbec, Blend, Uva, Uvas, Viñedos, Cabernet, Cabernet Sauvignon, Syrah, Red Blend, Chardonnay, Sauvignon Blanc, White Blend, Rosé, Extra Brut",
             "uno": "Rocky",
-            "dos": "",
-            "dos_eng": "",
+            "dos": "Roble",
+            "dos_eng": "Roble",
             "varietal": "Red Blend",
             "imagen": "Rocky/rocky_red_blend.png",
             "slug": "rocky-red-blend",
@@ -373,8 +398,8 @@
             
             "keyword": "Vinos, Vino, Lola Montes, Viñedo, Vino Tinto, Vino Blanco, Bodega, Mendoza, Rocky, Lola, Circus, Malbec, Blend, Uva, Uvas, Viñedos, Cabernet, Cabernet Sauvignon, Syrah, Red Blend, Chardonnay, Sauvignon Blanc, White Blend, Rosé, Extra Brut",
             "uno": "Rocky",
-            "dos": "",
-            "dos_eng": "",
+            "dos": "Roble",
+            "dos_eng": "Roble",
             "varietal": "Malbec",
             "imagen": "Rocky/rocky_malbec.png",
             "slug": "rocky-malbec",
@@ -396,8 +421,8 @@
             
             "keyword": "Vinos, Vino, Lola Montes, Viñedo, Vino Tinto, Vino Blanco, Bodega, Mendoza, Rocky, Lola, Circus, Malbec, Blend, Uva, Uvas, Viñedos, Cabernet, Cabernet Sauvignon, Syrah, Red Blend, Chardonnay, Sauvignon Blanc, White Blend, Rosé, Extra Brut",
             "uno": "Rocky",
-            "dos": "",
-            "dos_eng": "",
+            "dos": "Roble",
+            "dos_eng": "Roble",
             "varietal": "Cabernet Sauvignon",
             "imagen": "Rocky/rocky_cabernet_sauvignon.png",
             "slug": "rocky-cabernet-sauvignon",

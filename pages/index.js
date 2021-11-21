@@ -296,7 +296,7 @@ const Index = ({t}) => {
           ) : (bannerNumber === 3) ? (
             <InfoFranja> <b className="mb-5">CIRCUS</b> <br /> {t('TextosBanner.CircusP.Uno')} <br /> {t('TextosBanner.CircusP.Dos')} <br /> {t('TextosBanner.CircusP.Tres')} </InfoFranja>
           ) : (bannerNumber === 4) ? (
-            <InfoFranja> <b className="mb-5">ROCKY</b> <br /> {t('TextosBanner.RockyP.Uno')} <br /> {t('TextosBanner.RockyP.Dos')}</InfoFranja>
+            <InfoFranja> <b className="mb-5">ROCKY ROBLE</b> <br /> {t('TextosBanner.RockyP.Uno')} <br /> {t('TextosBanner.RockyP.Dos')}</InfoFranja>
           ) : null
         }
       </FranjaAbajo>

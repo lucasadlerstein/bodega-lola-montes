@@ -299,6 +299,7 @@ const unVino = ({enlace, t}) => {
                                             vinoInfo.varietal == 'Rosé' ||
                                             vinoInfo.varietal == 'Sauvignon Blanc' ||
                                             vinoInfo.varietal == 'Syrah' ||
+                                            vinoInfo.varietal == '50% Chenin | 50% Chardonnay' ||
                                             vinoInfo.varietal == 'Chardonnay')
                                             && (vinoInfo.slug !== vino.slug)
                                             && (vino.uno == 'Rocky')) ) {

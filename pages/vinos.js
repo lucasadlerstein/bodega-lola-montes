@@ -6,7 +6,7 @@ import VinosListado from '../vinos-lista.json';
 import {Container, Row, Col} from 'reactstrap';
 import styled from '@emotion/styled';
 
-import { withTranslation } from '../i18n';
+import { withTranslation, i18n } from '../i18n';
 
 
 const SelectFiltro = styled.select`
@@ -97,7 +97,7 @@ const Vinos = ({t}) => {
                                     }
                                 </SelectFiltro>
                             </Col>
-                            <Col sm={12} md={6} lg={3}>
+                            <Col sm={12} md={6} lg={4}>
                                 <SpanSelectName>{t('Vinos.Linea')}</SpanSelectName>
                                 <SelectFiltro
                                     onChange={(e) => handleChangeLinea(e)}
@@ -105,7 +105,7 @@ const Vinos = ({t}) => {
                                 >
                                     <option value="todas">{t('Vinos.Todas')}</option>
                                     <option value="Circus">Circus Wines</option>
-                                    <option value="Rocky">Rocky Wines</option>
+                                    <option value="Rocky">Rocky Roble Wines</option>
                                     <option value="Lola Montes">Lola Montes</option>
                                 </SelectFiltro>
                             </Col>
